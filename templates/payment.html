@@ -1,0 +1,370 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0077c8">
+<link rel="icon" type="image/png" href="/static/assets/img/logo/Logo.svg">
+
+{% block stylesheets %}
+<link rel="stylesheet" href="/static/assets/account/main.css">
+<link rel="stylesheet" href="/static/assets/account/vendor.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<style>
+
+.cgYotK {
+    background-color: white;
+    min-height: 92vh;
+    color: black;
+    box-sizing: initial;
+}
+
+.fSLWMC {
+    text-align: center;
+    max-width: 1050px;
+    margin: 0px auto;
+    padding: 3rem 0px 2.25rem;
+}
+
+.fSLWMC .note-head {
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+.jCoyit {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 8px 0px 4px;
+}
+
+.kVucsl {
+    width: 120px;
+    height: 4px;
+    background-image: linear-gradient(to right, rgb(34, 186, 253), rgb(0, 149, 252) 109%);
+    margin: auto;
+}
+
+.dsOwjA {
+    animation: 1s ease 0s 1 normal none running fadeIn;
+    display: block;
+    max-width: 1210px;
+    margin: 0px auto;
+    padding-bottom: 3rem;
+}
+
+.ibApWI {
+    display: flex;
+}
+
+.hduNvI {
+    margin-right: 4.5rem;
+    width: 50%;
+}
+
+.ghpdAg {
+    padding: 1.5rem;
+    margin: auto;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 8px 0px;
+}
+
+.hduNvI .payment-term {
+    margin: 0px 0px 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.bRFlMD:not(:last-child) {
+    margin: 0px 0px 0.7rem;
+}
+.bRFlMD {
+    animation: 0.7s ease 0s 1 normal none running fadeIn;
+    min-height: 40px;
+    width: 100%;
+    font-size: 14px;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    box-sizing: initial;
+}
+
+.gDmIbK {
+    display: inline-block;
+    width: 55%;
+}
+
+.iqHpar {
+    padding: 20px 25px;
+    margin: 1.5rem 0px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 8px 0px;
+}
+
+.XyQYx {
+    float: right;
+}
+
+.XyQYx .price {
+    font-size: 18px;
+    text-align: right;
+    font-weight: bold;
+}
+
+.cVWbJS {
+    margin-top: 20px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.jwSxOD {
+    display: flex;
+}
+
+.gkvxsa {
+    color: rgb(224, 32, 32);
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.fnCeZM {
+    padding: 1.5rem;
+    margin: auto auto 1rem;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 8px 0px;
+}
+
+.hrAPSi {
+    padding-right: 0px;
+    z-index: 1;
+    width: 55%;
+    float: left;
+    position: relative;
+}
+
+.izQfHK .active-tab {
+    box-shadow: rgb(0, 119, 200) 0px 0px 0px 2px;
+    opacity: 1;
+}
+
+.izQfHK .method {
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: rgb(164, 165, 167) 0px 0px 0px 1px;
+    font-size: 18px;
+    opacity: 0.55;
+    margin-bottom: 10px;
+}
+
+.izQfHK .momo-method {
+    margin-right: 10px;
+}
+
+.dMymSa p:not(:last-child) {
+    margin-bottom: 10px;
+}
+.dMymSa p {
+    color: rgb(51, 51, 51);
+    text-align: left;
+    font-size: 14px;
+}
+.bugEwt {
+    width: 100%;
+}
+
+.cVWbJS {
+    margin-top: 20px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+</style>
+{% endblock stylesheets %}
+
+{% block content %}
+
+<body style="background: rgb(255, 255, 255);">
+
+  <div id="main-app">
+    {% include "includes/navigation_hide.html"%}
+    <div>
+      <div class="style__Wrap-ruayjp-0 cgYotK">
+        <div class="style__TitleHead-ruayjp-1 fSLWMC">
+          <div class="style__TitleAction-ruayjp-2 jCoyit">Phương thức thanh toán</div>
+          <p class="note-head">Huỷ bất cứ khi nào. Không bao gồm Phim Thuê</p>
+          <div class="style__LightHead-ruayjp-3 kVucsl"></div>
+        </div>
+        <div class="style__WrapMethod-ruayjp-4 dsOwjA">
+          <div class="style__ChoosePackage-ruayjp-5 ibApWI">
+            <div class="style__PackageInfo-ruayjp-6 hduNvI">
+              <div class="style__PackageRadio-ruayjp-7 ghpdAg">
+                <p class="payment-term">Thời hạn Gói Cao Cấp</p>
+                <div class="style__InputRadio-ruayjp-8 bRFlMD">
+                  <div class="style__InputBody-ruayjp-9 gDmIbK">
+                    <input class="radio0" type="radio" id="label0" name="package" value="0">
+                    <div class="checkmark"></div>
+                    <label for="label0" class="description">1 tháng</label>
+                    <label for="label0" class="title-watch-on"></label>
+                  </div>
+                  <div class="style__TotalPriceOffer-ruayjp-10 XyQYx">
+                    <p class="price" for="label0">70.000đ</p>
+                  </div>
+                </div>
+                <div class="style__InputRadio-ruayjp-8 bRFlMD">
+                  <div class="style__InputBody-ruayjp-9 gDmIbK">
+                    <input class="radio1" type="radio" id="label1" name="package" value="1">
+                    <div class="checkmark"></div>
+                    <label for="label1" class="description">3 tháng</label>
+                    <label for="label1" class="title-watch-on">Tiết kiệm 17%</label>
+                  </div>
+                  <div class="style__TotalPriceOffer-ruayjp-10 XyQYx">
+                    <p class="price" for="label1">175.000đ</p>
+                    <p class="saving-price" for="label1">210.000đ</p>
+                  </div>
+                </div>
+                <div class="style__InputRadio-ruayjp-8 bRFlMD">
+                  <div class="style__InputBody-ruayjp-9 gDmIbK">
+                    <input class="radio2" type="radio" id="label2" name="package" value="2">
+                    <div class="checkmark"></div>
+                    <label for="label2" class="description">6 tháng</label>
+                    <label for="label2" class="title-watch-on">Tiết kiệm 17%</label>
+                  </div>
+                  <div class="style__TotalPriceOffer-ruayjp-10 XyQYx">
+                    <p class="price" for="label2">350.000đ</p>
+                    <p class="saving-price" for="label2">420.000đ</p>
+                  </div>
+                </div>
+                <div class="style__InputRadio-ruayjp-8 bRFlMD">
+                  <div class="style__InputBody-ruayjp-9 gDmIbK">
+                    <input class="radio3" type="radio" id="label3" name="package" value="3">
+                    <div class="checkmark"></div>
+                    <label for="label3" class="description">12 tháng <p class="popular-tag-type-mb">Phổ biến</p>
+                    </label>
+                    <label for="label3" class="title-watch-on">Tiết kiệm 30%</label>
+                  </div>
+                  <div class="style__TotalPriceOffer-ruayjp-10 XyQYx">
+                    <p class="price" for="label3">600.000đ</p>
+                    <p class="saving-price" for="label3">840.000đ</p>
+                  </div>
+                </div>
+              </div>
+              <div class="style__Wrap-sc-83p6q7-0 iqHpar">
+                <div class="style__Card-sc-83p6q7-1 bugEwt">
+                  <div class="style__TitleHead-sc-83p6q7-2 cnZyZB">Nhập mã khuyến mãi</div>
+                  <div class="style__FormInput-sc-83p6q7-3 cVWbJS">
+                    <div class="form-control">
+                    </div>
+                    <button type="button">Áp dụng</button>
+                  </div>
+                  <div class="style__CodeActive-sc-83p6q7-4 jwSxOD">
+                    <div class="style__ErrorCode-sc-83p6q7-6 gkvxsa"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="style__BillPackage-ruayjp-12 fnCeZM">
+                <div class="style__Card-ruayjp-13 yocpd">
+                  <div class="style__TitleHeadBill-ruayjp-14 NKAnJ">
+                    <span>Thông tin thanh toán</span>
+                  </div>
+                  <div class="style__BillBody-ruayjp-15 iAtJtP">
+                    <div class="style__Row-ruayjp-16 dYjRUa">
+                      <div class="style__Col-ruayjp-17 lkSZlt">
+                        <p>Tài khoản</p>
+                      </div>
+                      <div class="infopack-onb-right infopack-onb">0838105494</div>
+                    </div>
+                    <div class="style__Row-ruayjp-16 dYjRUa">
+                      <div class="style__Col-ruayjp-17 lkSZlt">
+                        <p>Đơn giá</p>
+                      </div>
+                      <div class="infopack-onb-right infopack-onb">840.000đ</div>
+                    </div>
+                    <div class="style__Row-ruayjp-16 dYjRUa">
+                      <div class="style__Col-ruayjp-17 lkSZlt">
+                        <p>Tự động gia hạn</p>
+                      </div>
+                      <div class="infopack-onb-right infopack-onb">27/11/2022</div>
+                    </div>
+                    <hr>
+                    <div class="style__Row-ruayjp-16 dYjRUa">
+                      <div class="style__Col-ruayjp-17 lkSZlt">
+                        <p>Tổng cộng:</p>
+                      </div>
+                      <div class="infopack-onb-right infopack-onb amount">600.000đ</div>
+                    </div>
+                    <p class="note-bottom">* Tự động gia hạn hằng tháng (hoặc hằng năm với Gói dài hạn) trừ phi bạn yêu cầu huỷ thuê bao ít nhất 24H trước khi hết hạn.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="style__Wrap-sc-54f51w-0 hrAPSi">
+              <div class="style__TitleHead-sc-54f51w-1 hqyyD">
+                <p>Chọn phương thức thanh toán</p>
+              </div>
+              <div class="style__MethodTab-sc-54f51w-2 izQfHK">
+                <div class="momo-method method active-tab">
+                  <div class="style__MethodImage-sc-54f51w-3 TgZgn">
+                    <p>Ví MoMo</p>
+                    <img width="27" src="https://ast.fimplus.io/files/icon-momo_1511250228054.png">
+                  </div>
+                </div>
+                <div class="credit-method method ">
+                  <div class="style__MethodImage-sc-54f51w-3 fQPMyJ">
+                    <p>Thẻ tín dụng</p>
+                    <img width="35" src="https://ast.fimplus.io/files/tin-dung-quoc-te-2_1510041550420.png">
+                  </div>
+                </div>
+                <div class="zalopay-method method ">
+                  <div class="style__MethodImage-sc-54f51w-3 iDOLEj">
+                    <p>Ví ZaloPay</p>
+                    <img width="27" src="https://assets.glxplay.io/static/files/zalopay-blue-bg_1625039179726.png">
+                  </div>
+                </div>
+                <div class="shopeepay-method method ">
+                  <div class="style__MethodImage-sc-54f51w-3 iDOLEj">
+                    <p>Ví ShopeePay</p>
+                    <img width="27" src="https://assets.glxplay.io/static/files/shopeepay-500x500_1628582896111.jpg">
+                  </div>
+                </div>
+              </div>
+              <div class="style__TabContent-sc-54f51w-4 kAFPyh">
+                <div id="payment-tab" class="tab-pane-active momo-tab">
+                  <div class="sync-momo">
+                    <div class="style__Wrap-sc-1540nlw-0 fSacGC">
+                      <div class="style__QrCodeImage-sc-1540nlw-1 jznjFs">
+                        <img src="data:image/png;base64,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">
+                      </div>
+                      <div class="style__TextRight-sc-1540nlw-4 dMymSa">
+                        <p>Bước 1: Mở ứng dụng và đăng nhập MoMo</p>
+                        <p class="tag-icon">Bước 2: Bấm chọn icon 
+                         ở góc phải phía trên màn hình để quét QR Code </p>
+                        <p>Bước 3: Bấm chọn “Xác nhận” để thanh toán</p>
+                        <p class="timer">Thời gian còn lại <span id="timer">00:08:03s</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rules">
+                    <p class="rules-body-onb">Bằng việc thanh toán, Quý khách đã đồng ý với <a class="link" target="_blank" href="/about-us/quy-che-su-dung-dich-vu"> Quy chế sử dụng Dịch vụ </a>của Galaxy Play và ủy quyền cho Galaxy Play tự động gia hạn khi hết hạn sử dụng, cho đến khi bạn hủy tự động gia hạn. </p>
+                  </div>
+                  <div class="img-secure">
+                    <img width="70" src="/static/assets/img/ssl-secured.png">
+                    <img width="70" src="/static/assets/img/DSS-PCI.png">
+                  </div>
+                  <div class="back-home">
+                    <a class="link" href="/browse">Xem kho phim và thanh toán sau</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+{% endblock content %}
+
+{% block javascripts %}
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+{% endblock javascripts %}

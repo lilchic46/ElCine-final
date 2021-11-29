@@ -1,0 +1,59 @@
+{% include "includes/header.html"%}
+
+<style>
+  .carousel-cell {
+    width: 28%;
+    height: 200px;
+    margin-right: 10px;
+    background: #8C8;
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+  }
+  
+  .carousel-cell.is-selected {
+    background: #ED2;
+  }
+  
+  /* cell number */
+  .carousel-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(carousel-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+  }
+</style>
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+
+
+{% block content %}
+<div id="main-app">
+
+  {% include "includes/navigation.html"%}
+  <div id="main-app">
+
+    {% include "includes/navigation.html"%}
+    <div id="home">
+      <div class="library-movies">
+        <br><br><br><br><br>
+        <div id="myList"></div>
+      </div>
+    </div>
+  
+  
+  </div>
+  
+  {% include "includes/footer.html"%}
+
+</div>
+
+{% endblock content %}
+
+{% block javascripts %}
+<script src="/static/assets/plugins/jquery/jquery.min.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="/static/assets/js/myList.js"></script>
+
+{% endblock javascripts %}

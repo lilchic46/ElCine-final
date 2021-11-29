@@ -1,0 +1,59 @@
+{% include "includes/header.html"%}
+
+<style>
+
+.carousel-cell {
+  width: 28%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8C8;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+
+.carousel-cell.is-selected {
+  background: #ED2;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(carousel-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+</style>
+
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <!-- Add the slick-theme.css if you want default styling -->
+  
+
+{% block content %}
+<div id="main-app">
+  {% include "includes/navigation.html"%}
+  <div id="home">
+    <div class="library-movies">
+      {% include "includes/banner.html"%}
+
+      <br><br><br>
+
+      <div id="movieList"></div>
+    </div>
+  </div>
+
+  {% include "includes/footer.html"%}
+</div>
+
+{% endblock content %}
+
+{% block javascripts %}
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="/static/assets/js/main.js"></script>
+
+{% endblock javascripts %}
