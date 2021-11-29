@@ -1,13 +1,8 @@
-
-
 ## How to use it
-
 python-3.9
 
 # Deploy on mac or Linux
-
 # Installing virtualenv¶
-
 https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/
 
 
@@ -31,8 +26,6 @@ python manage.py makemigrations
 python manage.py migrate
 python manage.py migrate --run-syncdb
 
-
 #Run 
 
 python3 manage runserver 
-
