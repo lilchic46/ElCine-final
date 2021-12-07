@@ -1,3 +1,41 @@
+<style>
+  .cUXgFr {
+    position: relative;
+    right: 0px;
+    margin-right: 2.25rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    transition: all 0.4s ease-in-out 0s;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 10px 44px;
+}
+.cUXgFr input {
+    width: 200px;
+    pointer-events: initial;
+}
+
+.gvNVZq {
+    transition: all 0.3s ease-in-out 0s;
+    position: absolute;
+    cursor: pointer;
+    left: 12px;
+    top: 50%;
+    transform: translate(0px, -50%);
+}
+
+.ixtbYQ {
+    background: transparent;
+    transition: all 0.4s ease-in-out 0s;
+    width: 0px;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    font-size: 1rem;
+    border: 0px;
+    padding: 0px;
+    pointer-events: none;
+}
+
+</style>
 <div class="nav-all"
   style="position: fixed; background: linear-gradient(rgb(16, 16, 16), rgba(16, 16, 16, 0)); transition: all 0.3s ease 0s;">
   <div class="navbar-main" id="navbar">
@@ -34,18 +72,18 @@
 
       <div class="nav-right">
         <div class="search__Control-sc-3ylcj4-2 cUXgFr">
+          <input placeholder="Search movie" type="text" class="search__Input-sc-3ylcj4-0 ixtbYQ">
           <div class="search__BoxIconSearch-sc-3ylcj4-1 gvNVZq">
-            <div class="icon-search">
+            <div class="icon-search" id="btnSearch">
               <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M11 2a9 9 0 017.032 14.617l3.675 3.676a1 1 0 01-1.32 1.497l-.094-.083-3.676-3.675A9 9 0 1111 2zm0 2a7 7 0 104.865 12.033.732.732 0 01.078-.09l.09-.078A7 7 0 0011 4z" fill="#FFF" fill-rule="evenodd"></path>
               </svg>
             </div>
           </div>
-
         </div>
         <div class="dropdown-nav hover">
           <div class="icon-user">
-            <img width="40" src="/static/assets/img/avatar.png">
+            <img width="40" src="/static/assets/img/avatar3.png">
           </div>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 492.004 492.004" width="30px" height="30px"
             class="arrow-up">
@@ -66,14 +104,6 @@
                 <span>My Account</span>
               </a>
             </li>
-
-            <li class="link-info">
-              <a class="hr-tag" href="/browse/payment.html">
-                <img src="/static/assets/img/coin.png">
-                <span>Coin</span>
-              </a>
-            </li>
-
             <li class="logout">
               <a href="/">
                 <img src="/static/assets/img/icon-logout.svg">
@@ -143,38 +173,6 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="menu-roll-mb">
-        <ul>
-          <li class="profile" id="profileMobile" style="display: flex;">
-            <a class="icon-profile">
-              <img width="50" src="https://assets.glxplay.io/static/avatars/avatar%20gp%20grb-07.jpg">
-              <p class="name-profile ">Trẻ em</p>
-            </a>
-            <a class="icon-profile">
-              <img width="50" src="https://assets.glxplay.io/static/avatars/Avatar%20Profile-12.png">
-              <p class="name-profile ">Tin</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a aria-current="page" class="active" href="/browse" style="font-weight: 600;">Trang chủ</a>
-          </li>
-          <li class="nav-item">
-            <a href="/browse/movie">Phim điện ảnh</a>
-          </li>
-          <li class="nav-item">
-            <a href="/browse/tvseries">Phim bộ</a>
-          </li>
-          <li class="nav-item">
-            <a href="/browse/rental">Phim thuê</a>
-          </li>
-          <li class="nav-item">
-            <a href="/browse/mylist">Danh sách của tôi</a>
-          </li>
-          <li class="nav-item">
-            <a href="/account">Cá nhân</a>
-          </li>
-        </ul>
       </div>
     </div>
   </div>

@@ -16,25 +16,22 @@ function getCookie(name) {
 
 $(document).ready(function(){
  
+
   $.ajax({
     url: '/api/new_arrival',
-    beforeSend: function (xhr) {
-      xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
-      xhr.setRequestHeader('X-CSRFToken', getCookie('csrftoken'));
-    },
     data: 'json',
     success: function (response) {
       if (response.status == 0) {
         var HTML = '';
-
-        HTML += '<div class="ribbon-landscape">' +
-          '<h1>' + response.data.group + '</h1>' +
-          '<div class="main-carousel" >';
-        for (let i1 = 0; i1 < response.data.items.length; i1++) {
-          HTML += response.data.items[i1];
-        }
-        HTML += '</div></div>'
-  
+        $.each(response.data, function (i, category) {
+          HTML += '<div class="ribbon-landscape">' +
+            '<h1>' + category.group + '</h1>' +
+            '<div class="main-carousel" >';
+          for (let index = 0; index < category.items.length; index++) {
+            HTML += '<a href="/browse/movie-detail.html?id='+ category.items[index].id+'">' + category.items[index].img + '</a>';
+          }
+          HTML += '</div></div>'
+        })
         HTML += '<script>$(".main-carousel").flickity({' +
           '"groupCells": true,' +
           '"imagesLoaded": true,' +

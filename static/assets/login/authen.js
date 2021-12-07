@@ -39,7 +39,7 @@ $(document).ready(function () {
 
 	$("#btnSignIn").click(function () {
 		var formData = {
-			email: $("#email").val(),
+			username: $("#username").val(),
 			password: $("#password").val(),
 		}
 		$.ajax({

@@ -1,0 +1,162 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0077c8">
+<link rel="icon" type="image/png" href="/static/assets/img/logo/Logo.svg">
+
+{% block stylesheets %}
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link rel="stylesheet" href="/static/assets/main/main.css">
+
+
+{% endblock stylesheets %}
+
+{% block content %}
+
+<div id="main-app">
+  
+  {% include "includes/navigation_hide.html" %}
+
+  <div class="ribbon-banner">
+    <div class="container">
+      <div class="fadeIn-appear-done fadeIn-enter-done"
+        style="position: absolute; top: 0px; left: 0px; width: 100%;">
+        <img class="ribbon-image fadeIn"
+          src = '{{ poster_url }}'
+          placeholder="/static/assets/img/thumb-image.png">
+        <div class="ribbon-content fadeInUp-enter-done">
+          <div class="title-movie">
+          </div>
+          <div class="detail-wrap">
+            <div>
+              <div class="detail-movie-page">
+                <div class="content-movie">
+                  <div class="title-movie">
+                    {{ title }}
+                  </div>
+                  <div id="overview">
+                    <div class="list-detail">
+                      <div class="list-item date-public">{{ year }}</div>
+                      <div class="list-item content-rating">{{ rating }}</div>
+                      <div class="list-item duration">{{ runtime }}</div>
+                      <div class="list-item resolution">HD</div>
+                      <div class="list-item tvod">Rental</div>
+                      <div class="list-item voice">Subscribe</div>
+                    </div>
+                    <div class="description text-light">
+                      {{ description }} 
+                    </div>
+
+                    <div class="list-type">
+                      <div class="list-actor">
+                        <span>Actor:</span>
+                        <div class="text-actor">
+                          <div class="actor">{{ cast }}</div>&nbsp;
+                        </div>
+                      </div>
+                      
+                      <div class="list-actor">
+                        <span>Director:</span>
+                        <div class="text-actor">
+                          <p class="actor">{{ director }}</p>&nbsp;
+                        </div>
+                      </div>
+
+                      <div class="list-actor">
+                        <span>Category:</span>
+                        <div class="text-actor">
+                          <div class="actor" >{{ category }}</div>&nbsp;
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="link-action">
+											{% if is_billing == False %}
+                      <button id="btnRent" class="btn-primary " type="watch">
+                        <div class="btn-watch">
+                          <svg version="1.1" viewBox="0 0 41.999 41.999" id="icon-play">
+                            <path d="M36.068,20.176l-29-20C6.761-0.035,6.363-0.057,6.035,0.114C5.706,0.287,5.5,0.627,5.5,0.999v40 c0,0.372,0.206,0.713,0.535,0.886c0.146,0.076,0.306,0.114,0.465,0.114c0.199,0,0.397-0.06,0.568-0.177l29-20 c0.271-0.187,0.432-0.494,0.432-0.823S36.338,20.363,36.068,20.176z"></path>
+                          </svg>
+														Price {{ price }} VND
+                        </div>
+                      </button>
+											{% else %}
+											<button id="btnWatch" class="btn-primary " type="watch">
+                        <div class="btn-watch">
+                          <svg version="1.1" viewBox="0 0 41.999 41.999" id="icon-play">
+                            <path d="M36.068,20.176l-29-20C6.761-0.035,6.363-0.057,6.035,0.114C5.706,0.287,5.5,0.627,5.5,0.999v40 c0,0.372,0.206,0.713,0.535,0.886c0.146,0.076,0.306,0.114,0.465,0.114c0.199,0,0.397-0.06,0.568-0.177l29-20 c0.271-0.187,0.432-0.494,0.432-0.823S36.338,20.363,36.068,20.176z"></path>
+                          </svg>
+														Watch now
+                        </div>
+                      </button>
+											{% endif %} 
+                      
+                        {% if is_favorite == False %}
+												<button id="btnAddList" class="btn-primary btn-watch-movie" type="addList">
+													<div class="btn-add-list">
+														<div class="icon" id="addList">
+															<svg viewBox="0 0 448 448" id="add-list-icon">
+																<path  d="m408 184h-136c-4.417969 0-8-3.582031-8-8v-136c0-22.089844-17.910156-40-40-40s-40 17.910156-40 40v136c0 4.417969-3.582031 8-8 8h-136c-22.089844 0-40 17.910156-40 40s17.910156 40 40 40h136c4.417969 0 8 3.582031 8 8v136c0 22.089844 17.910156 40 40 40s40-17.910156 40-40v-136c0-4.417969 3.582031-8 8-8h136c22.089844 0 40-17.910156 40-40s-17.910156-40-40-40zm0 0"></path>
+															</svg>
+														</div>My List
+													</div>
+												</button>
+												{% else %}
+												<button class="btn-primary btn-watch-movie" type="addList">
+													<div class="btn-add-list">
+														<div class="icon">
+															<svg xmlns="http://www.w3.org/2000/svg" id="icon-tick" enable-background="new 0 0 24 24"
+																height="512" viewBox="0 0 24 24" width="512">
+																<path
+																	d="m.828 13.336c-.261.304-.388.691-.357 1.091s.215.764.52 1.024l7.403 6.346c.275.235.616.361.974.361.044 0 .089-.002.134-.006.405-.036.77-.229 1.028-.542l12.662-15.411c.254-.31.373-.7.334-1.099-.04-.399-.231-.759-.541-1.014l-2.318-1.904c-.639-.524-1.585-.432-2.111.207l-9.745 11.861-3.916-3.355c-.628-.536-1.576-.465-2.115.163z">
+																</path>
+															</svg>
+														</div>
+														My list
+													</div>
+												</button>
+												{% endif %}
+                     
+                    </div>
+										
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="layout-bottom"></div>
+      <div class="style__WrapActionSlide-sucgiq-5 hrveWn">
+        <div class="style__WrapDots-sucgiq-7 bjwbfY">
+          <div class="style__Dot-sucgiq-8 eLmmMq active"></div>
+          <div class="style__Dot-sucgiq-8 eLmmMq"></div>
+          <div class="style__Dot-sucgiq-8 eLmmMq"></div>
+          <div class="style__Dot-sucgiq-8 eLmmMq"></div>
+          <div class="style__Dot-sucgiq-8 eLmmMq"></div>
+        </div>
+        <div class="style__Arrow-sucgiq-6 hjEaDa prev">
+          <svg fill="#F2F2F2" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+            <path
+              d="M18 1.875c8.906 0 16.125 7.22 16.125 16.125 0 8.906-7.22 16.125-16.125 16.125-8.906 0-16.125-7.22-16.125-16.125C1.875 9.094 9.095 1.875 18 1.875zm0 2.25C10.337 4.125 4.125 10.337 4.125 18S10.337 31.875 18 31.875 31.875 25.663 31.875 18 25.663 4.125 18 4.125zM10.875 18v-.036l.006-.078-.006.114c0-.06.005-.12.014-.177l.01-.051c.024-.118.066-.23.124-.33l.026-.044.043-.063.004-.004.01-.015a1.3 1.3 0 01.083-.096l.016-.015 6-6a1.125 1.125 0 011.7 1.464l-.11.126-4.079 4.08H24a1.125 1.125 0 01.153 2.24l-.153.01h-9.284l4.08 4.08c.399.399.435 1.024.108 1.464l-.109.126c-.399.4-1.024.436-1.464.11l-.126-.11-6-6-.018-.018a.725.725 0 01-.045-.05l.063.068a1.155 1.155 0 01-.104-.118l-.026-.036a.943.943 0 01-.04-.062l-.033-.06-.02-.04a.538.538 0 01-.024-.055.983.983 0 01-.07-.252l-.005-.04a.62.62 0 01-.006-.062l-.002-.052V18z"
+              fill-rule="evenodd"></path>
+          </svg>
+        </div>
+        <div class="style__Arrow-sucgiq-6 hjEaDa next">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="#F2F2F2" width="36" height="36" viewBox="0 0 36 36">
+            <path
+              d="M18 1.875c8.906 0 16.125 7.22 16.125 16.125 0 8.906-7.22 16.125-16.125 16.125-8.906 0-16.125-7.22-16.125-16.125C1.875 9.094 9.095 1.875 18 1.875zm0 2.25C10.337 4.125 4.125 10.337 4.125 18S10.337 31.875 18 31.875 31.875 25.663 31.875 18 25.663 4.125 18 4.125zm.67 6.97l.125.11 6 6 .018.018c.016.016.03.032.045.05l-.063-.068c.038.037.072.077.104.118l.026.036c.014.02.027.04.04.062l.033.06.02.04a.538.538 0 01.024.055 1.185 1.185 0 01.07.252l.005.04c.005.043.008.087.008.132l-.002.065c0 .016-.002.032-.004.048l.006-.113c0 .06-.005.12-.014.177l-.01.051a1.034 1.034 0 01-.15.374c-.014.021-.027.041-.042.06l-.005.007-.01.015a1.3 1.3 0 01-.083.096l-.016.015-6 6a1.125 1.125 0 01-1.7-1.464l.11-.126 4.078-4.08H12a1.125 1.125 0 01-.153-2.24l.153-.01h9.283l-4.078-4.08a1.125 1.125 0 01-.11-1.464l.11-.126a1.125 1.125 0 011.464-.11z"
+              fill-rule="evenodd"></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+{% endblock content %}
+
+{% block javascripts %}
+<script src="/static/assets/plugins/jquery/jquery.min.js"></script>
+<script src="/static/assets/js/movieDetail.js"></script>
+{% endblock javascripts %}

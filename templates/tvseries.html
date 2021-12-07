@@ -1,0 +1,999 @@
+{% include "includes/header.html"%}
+
+{% block content %}
+<div id="main-app">
+
+  {% include "includes/navigation.html"%}
+
+  <div id="home">
+    <div class="library-movies">
+      <div class="ribbon-banner">
+        <div class="container">
+          <div class="fadeIn-appear-done fadeIn-enter-done"
+            style="position: absolute; top: 0px; left: 0px; width: 100%;">
+            <img class="ribbon-image fadeIn"
+              src="//assets.glxplay.io/images/w1600/title/reply-1988_web_spotlight_cbb2921466c88b93e5b5325b5a403972.jpg"
+              placeholder="/main/assets/img/thumb-image.png">
+            <div class="ribbon-content fadeInUp-enter-done">
+              <div class="title-movie">
+                <img
+                  src="//assets.glxplay.io/images/w400/title/reply-1988_web_titleSpotlightEn_086a302f73be7f92108a13188084ac6f.png">
+              </div>
+              <div class="link-action">
+                <button class="btn-primary btn-watch-movie" type="watch">
+                  <div class="btn-watch">
+                    <svg version="1.1" viewBox="0 0 41.999 41.999" id="icon-play">
+                      <path
+                        d="M36.068,20.176l-29-20C6.761-0.035,6.363-0.057,6.035,0.114C5.706,0.287,5.5,0.627,5.5,0.999v40 c0,0.372,0.206,0.713,0.535,0.886c0.146,0.076,0.306,0.114,0.465,0.114c0.199,0,0.397-0.06,0.568-0.177l29-20 c0.271-0.187,0.432-0.494,0.432-0.823S36.338,20.363,36.068,20.176z">
+                      </path>
+                    </svg>Nâng cấp gói
+                  </div>
+                </button>
+                <button class="btn-primary btn-watch-movie" type="addList">
+                  <div class="btn-add-list">
+                    <div class="icon">
+                      <svg viewBox="0 0 448 448" id="add-list-icon">
+                        <path
+                          d="m408 184h-136c-4.417969 0-8-3.582031-8-8v-136c0-22.089844-17.910156-40-40-40s-40 17.910156-40 40v136c0 4.417969-3.582031 8-8 8h-136c-22.089844 0-40 17.910156-40 40s17.910156 40 40 40h136c4.417969 0 8 3.582031 8 8v136c0 22.089844 17.910156 40 40 40s40-17.910156 40-40v-136c0-4.417969 3.582031-8 8-8h136c22.089844 0 40-17.910156 40-40s-17.910156-40-40-40zm0 0">
+                        </path>
+                      </svg>
+                    </div>Danh sách của tôi
+                  </div>
+                </button>
+              </div>
+              <div class="description-movie">Lấy bối cảnh ở khu phố Ssangmun trong lòng Seoul sầm uất năm 1988, nơi có
+                năm đứa trẻ cá tính khác biệt nhưng thân thiết. Tình bạn của họ vô tư, tươi vui đồng thời xen lẫn những
+                rung động đầu đời. <a class="show-detail-movie" href="/title/reply-1988">Xem chi tiết <svg
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 492.004 492.004" width="30px" height="30px"
+                    class="arrow-right">
+                    <path
+                      d="M382.678,226.804L163.73,7.86C158.666,2.792,151.906,0,144.698,0s-13.968,2.792-19.032,7.86l-16.124,16.12    c-10.492,10.504-10.492,27.576,0,38.064L293.398,245.9l-184.06,184.06c-5.064,5.068-7.86,11.824-7.86,19.028    c0,7.212,2.796,13.968,7.86,19.04l16.124,16.116c5.068,5.068,11.824,7.86,19.032,7.86s13.968-2.792,19.032-7.86L382.678,265    c5.076-5.084,7.864-11.872,7.848-19.088C390.542,238.668,387.754,231.884,382.678,226.804z"
+                      data-original="#000000" class="active-path" data-old_color="#000000"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="layout-bottom"></div>
+          <div class="style__WrapActionSlide-sucgiq-5 hrveWn">
+            <div class="style__WrapDots-sucgiq-7 bjwbfY">
+              <div class="style__Dot-sucgiq-8 eLmmMq"></div>
+              <div class="style__Dot-sucgiq-8 eLmmMq"></div>
+              <div class="style__Dot-sucgiq-8 eLmmMq active"></div>
+              <div class="style__Dot-sucgiq-8 eLmmMq"></div>
+              <div class="style__Dot-sucgiq-8 eLmmMq"></div>
+            </div>
+            <div class="style__Arrow-sucgiq-6 hjEaDa prev">
+              <svg fill="#F2F2F2" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+                <path
+                  d="M18 1.875c8.906 0 16.125 7.22 16.125 16.125 0 8.906-7.22 16.125-16.125 16.125-8.906 0-16.125-7.22-16.125-16.125C1.875 9.094 9.095 1.875 18 1.875zm0 2.25C10.337 4.125 4.125 10.337 4.125 18S10.337 31.875 18 31.875 31.875 25.663 31.875 18 25.663 4.125 18 4.125zM10.875 18v-.036l.006-.078-.006.114c0-.06.005-.12.014-.177l.01-.051c.024-.118.066-.23.124-.33l.026-.044.043-.063.004-.004.01-.015a1.3 1.3 0 01.083-.096l.016-.015 6-6a1.125 1.125 0 011.7 1.464l-.11.126-4.079 4.08H24a1.125 1.125 0 01.153 2.24l-.153.01h-9.284l4.08 4.08c.399.399.435 1.024.108 1.464l-.109.126c-.399.4-1.024.436-1.464.11l-.126-.11-6-6-.018-.018a.725.725 0 01-.045-.05l.063.068a1.155 1.155 0 01-.104-.118l-.026-.036a.943.943 0 01-.04-.062l-.033-.06-.02-.04a.538.538 0 01-.024-.055.983.983 0 01-.07-.252l-.005-.04a.62.62 0 01-.006-.062l-.002-.052V18z"
+                  fill-rule="evenodd"></path>
+              </svg>
+            </div>
+            <div class="style__Arrow-sucgiq-6 hjEaDa next">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="#F2F2F2" width="36" height="36" viewBox="0 0 36 36">
+                <path
+                  d="M18 1.875c8.906 0 16.125 7.22 16.125 16.125 0 8.906-7.22 16.125-16.125 16.125-8.906 0-16.125-7.22-16.125-16.125C1.875 9.094 9.095 1.875 18 1.875zm0 2.25C10.337 4.125 4.125 10.337 4.125 18S10.337 31.875 18 31.875 31.875 25.663 31.875 18 25.663 4.125 18 4.125zm.67 6.97l.125.11 6 6 .018.018c.016.016.03.032.045.05l-.063-.068c.038.037.072.077.104.118l.026.036c.014.02.027.04.04.062l.033.06.02.04a.538.538 0 01.024.055 1.185 1.185 0 01.07.252l.005.04c.005.043.008.087.008.132l-.002.065c0 .016-.002.032-.004.048l.006-.113c0 .06-.005.12-.014.177l-.01.051a1.034 1.034 0 01-.15.374c-.014.021-.027.041-.042.06l-.005.007-.01.015a1.3 1.3 0 01-.083.096l-.016.015-6 6a1.125 1.125 0 01-1.7-1.464l.11-.126 4.078-4.08H12a1.125 1.125 0 01-.153-2.24l.153-.01h9.283l-4.078-4.08a1.125 1.125 0 01-.11-1.464l.11-.126a1.125 1.125 0 011.464-.11z"
+                  fill-rule="evenodd"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ribbon-landscape">
+        <div class="style__WrapTitle-sc-19ylk1h-0 hZlIug">
+          <a class="link" href="/browse/ribbon/svod-viet-horror">
+            <div class="style__Title-sc-19ylk1h-1 eHRgDX">Phim Bộ Việt Hay Nhất Trên Galaxy Play <svg
+                xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="24" height="24"
+                viewBox="0 0 24 24">
+                <defs>
+                  <path id="prefix__a" d="M0 0h24v24H0z"></path>
+                </defs>
+                <g fill="none" fill-rule="evenodd">
+                  <mask id="prefix__b" fill="#fff">
+                    <use xlink:href="#prefix__a"></use>
+                  </mask>
+                  <path fill="#FFF" d="M7.973 0l-2.83 2.83 9.17 9.17-9.17 9.17L7.973 24l12-12z" mask="url(#prefix__b)">
+                  </path>
+                </g>
+              </svg>
+            </div>
+          </a>
+        </div>
+        <div class="style__RowContainer-jfvctl-0 gABwHd row-container" data-list="svod-viet-horror" id="row-1">
+          <div class="style__Container-jfvctl-1 huYqWP">
+            <div class="style__RowContent-jfvctl-2 dDqRof">
+              <div class="style__Slider-jfvctl-3 iDoMdF">
+                <div class="style__Arrow-jfvctl-7 style__ArrowPrev-jfvctl-8 jPqXBB">
+                  <svg viewBox="0 0 492 492" width="30px" id="arrow-left">
+                    <path
+                      d="M198.608,246.104L382.664,62.04c5.068-5.056,7.856-11.816,7.856-19.024c0-7.212-2.788-13.968-7.856-19.032l-16.128-16.12    C361.476,2.792,354.712,0,347.504,0s-13.964,2.792-19.028,7.864L109.328,227.008c-5.084,5.08-7.868,11.868-7.848,19.084    c-0.02,7.248,2.76,14.028,7.848,19.112l218.944,218.932c5.064,5.072,11.82,7.864,19.032,7.864c7.208,0,13.964-2.792,19.032-7.864    l16.124-16.12c10.492-10.492,10.492-27.572,0-38.06L198.608,246.104z"
+                      data-original="#000000" class="active-path" data-old_color="#000000"></path>
+                  </svg>
+                </div>
+                <div class="style__SliderMask-jfvctl-4 gmuUnX">
+                  <div class="style__WrapDot-jfvctl-12 cmPOSC slide-dots">
+                    <div class="style__Dot-jfvctl-13 hLCmrL"></div>
+                    <div class="style__Dot-jfvctl-13 fVhHjV"></div>
+                    <div class="style__Dot-jfvctl-13 fVhHjV"></div>
+                  </div>
+                  <div class="style__SliderContent-jfvctl-5 blhUGj">
+                    <div class="style__SliderItem-jfvctl-6 hYzxtc slide-active" style="">
+                      <div class="style__Card-jfvctl-11 IaIDG">
+                        <img class="img-placeholder" alt="Hồ Sơ Lửa - Phần 1: Mật Danh Đ9"
+                          src="/main/assets/img/thumpgray-16x9.png">
+                        <div class="style__Box-jfvctl-10 ildniP">
+                          <div class="style__CardHover-jfvctl-14 kLdcCE">
+                            <a href="/title/ho-so-lua-season-1">
+                              <img alt="Hồ Sơ Lửa - Phần 1: Mật Danh Đ9" class="hover-img"
+                                src="//assets.glxplay.io/images/w400/title/ho-so-lua-season-1_web_posterLandscape_d109da64e4d8ba022db90f83eb5aee05.jpg">
+                            </a>
+                            <div class="style__PosterTagBottom-jfvctl-38 gqFsbl"></div>
+                            <a href="/title/ho-so-lua-season-1"></a>
+                            <div class="style__ListAction-jfvctl-15 kYbrCz"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="style__SliderItem-jfvctl-6 hYzxtc slide-active" style="">
+                      <div class="style__Card-jfvctl-11 IaIDG">
+                        <img class="img-placeholder" alt="Hồ Sơ Lửa - Phần 2: Người Ba Mặt"
+                          src="/main/assets/img/thumpgray-16x9.png">
+                        <div class="style__Box-jfvctl-10 ildniP">
+                          <div class="style__CardHover-jfvctl-14 kLdcCE">
+                            <a href="/title/ho-so-lua-season-2">
+                              <img alt="Hồ Sơ Lửa - Phần 2: Người Ba Mặt" class="hover-img"
+                                src="//assets.glxplay.io/images/w400/title/ho-so-lua-season-2_web_posterLandscape_cd87ec04b55d2df8f4e981b75f143cac.jpg">
+                            </a>
+                            <div class="style__PosterTagBottom-jfvctl-38 gqFsbl"></div>
+                            <a href="/title/ho-so-lua-season-2"></a>
+                            <div class="style__ListAction-jfvctl-15 kYbrCz"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="style__SliderItem-jfvctl-6 hYzxtc slide-active" style="">
+                      <div class="style__Card-jfvctl-11 IaIDG">
+                        <img class="img-placeholder" alt="Hồ Sơ Lửa - Phần 3: Tử Thi Lên Tiếng"
+                          src="/main/assets/img/thumpgray-16x9.png">
+                        <div class="style__Box-jfvctl-10 ildniP">
+                          <div class="style__CardHover-jfvctl-14 kLdcCE">
+                            <a href="/title/ho-so-lua-season">
+                              <img alt="Hồ Sơ Lửa - Phần 3: Tử Thi Lên Tiếng" class="hover-img"
+                                src="//assets.glxplay.io/images/w400/title/ho-so-lua-season_web_posterLandscape_9bf18999009c0cea875badd50e4b70a3.jpg">
+                            </a>
+                            <div class="style__PosterTagBottom-jfvctl-38 gqFsbl"></div>
+                            <a href="/title/ho-so-lua-season"></a>
+                            <div class="style__ListAction-jfvctl-15 kYbrCz"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="style__SliderItem-jfvctl-6 hYzxtc slide-active" style="">
+                      <div class="style__Card-jfvctl-11 IaIDG">
+                        <img class="img-placeholder" alt="Đoạn Trường Nam Ai" src="/main/assets/img/thumpgray-16x9.png">
+                        <div class="style__Box-jfvctl-10 ildniP">
+                          <div class="style__CardHover-jfvctl-14 kLdcCE">
+                            <a href="/title/doan-truong-nam-ai">
+                              <img alt="Đoạn Trường Nam Ai" class="hover-img"
+                                src="//assets.glxplay.io/images/w400/title/doan-truong-nam-ai_web_posterLandscape_21cb2b4be1aadbb85ecc6bd839587145.jpg">
+                            </a>
+                            <div class="style__PosterTagBottom-jfvctl-38 gqFsbl"></div>
+                            <a href="/title/doan-truong-nam-ai"></a>
+                            <div class="style__ListAction-jfvctl-15 kYbrCz"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="style__SliderItem-jfvctl-6 hYzxtc slide-active" style="">
+                      <div class="style__Card-jfvctl-11 IaIDG">
+                        <img class="img-placeholder" alt="Hậu Duệ Mặt Trời Việt Nam"
+                          src="/main/assets/img/thumpgray-16x9.png">
+                        <div class="style__Box-jfvctl-10 ildniP">
+                          <div class="style__CardHover-jfvctl-14 kLdcCE">
+                            <a href="/title/hau-due-mat-troi-viet-nam">
+                              <img alt="Hậu Duệ Mặt Trời Việt Nam" class="hover-img"
+                                src="//assets.glxplay.io/images/w400/title/hau-due-mat-troi-viet-nam_web_posterLandscape_a1e677b57355b80a9ce40bc51d9f08bf.jpg">
+                            </a>
+                            <div class="style__PosterTagBottom-jfvctl-38 gqFsbl"></div>
+                            <a href="/title/hau-due-mat-troi-viet-nam"></a>
+                            <div class="style__ListAction-jfvctl-15 kYbrCz"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="style__SliderItem-jfvctl-6 hYzxtc">
+                      <div class="style__Card-jfvctl-11 IaIDG card">
+                        <img class="img-placeholder" alt="Ngày Mai Bình Yên" src="/main/assets/img/thumpgray-16x9.png">
+                        <div class="style__Box-jfvctl-10 ildniP">
+                          <img alt="Ngày Mai Bình Yên" class="hover-img"
+                            src="//assets.glxplay.io/images/w400/title/ngay-mai-binh-yen_web_posterLandscape_01360c01dc8a995b8890effb6a991af2.jpg">
+                          <div class="style__PosterTagBottom-jfvctl-38 gqFsbl"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="style__SliderItem-jfvctl-6 hYzxtc">
+                      <div class="style__Card-jfvctl-11 IaIDG card">
+                        <img class="img-placeholder" alt="Cha Rơi" src="/main/assets/img/thumpgray-16x9.png">
+                        <div class="style__Box-jfvctl-10 ildniP">
+                          <img alt="Cha Rơi" class="hover-img"
+                            src="//assets.glxplay.io/images/w400/title/stories-of-fathers_web_posterLandscape_c83de6dfa5343fe22d52925d8b316a08.jpg">
+                          <div class="style__PosterTagBottom-jfvctl-38 gqFsbl"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="style__SliderItem-jfvctl-6 hYzxtc">
+                      <div class="style__Card-jfvctl-11 IaIDG card">
+                        <img class="img-placeholder" alt="Con Nhà Giàu" src="/main/assets/img/thumpgray-16x9.png">
+                        <div class="style__Box-jfvctl-10 ildniP">
+                          <img alt="Con Nhà Giàu" class="hover-img"
+                            src="//assets.glxplay.io/images/w400/title/rich-kids_web_posterLandscape_daf6c0cdcffe466af5e93b3a348493df.jpg">
+                          <div class="style__PosterTagBottom-jfvctl-38 gqFsbl"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="style__SliderItem-jfvctl-6 hYzxtc">
+                      <div class="style__Card-jfvctl-11 IaIDG card">
+                        <img class="img-placeholder" alt="Mắt Lụa" src="/main/assets/img/thumpgray-16x9.png">
+                        <div class="style__Box-jfvctl-10 ildniP">
+                          <img alt="Mắt Lụa" class="hover-img"
+                            src="//assets.glxplay.io/images/w400/title/mat-lua_web_posterLandscape_c13f11f590dd0baeca3638c17a965912.jpg">
+                          <div class="style__PosterTagBottom-jfvctl-38 gqFsbl"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="style__SliderItem-jfvctl-6 hYzxtc">
+                      <div class="style__Card-jfvctl-11 IaIDG card">
+                        <img class="img-placeholder" alt="Cuộc Chiến Quý Ông" src="/main/assets/img/thumpgray-16x9.png">
+                        <div class="style__Box-jfvctl-10 ildniP">
+                          <img alt="Cuộc Chiến Quý Ông" class="hover-img"
+                            src="//assets.glxplay.io/images/w400/title/gentlemen-in-competition_web_posterLandscape_6d638755237dd0ddabda31ab06d21d34.jpg">
+                          <div class="style__PosterTagBottom-jfvctl-38 gqFsbl"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="style__SliderItem-jfvctl-6 hYzxtc">
+                      <div class="style__Card-jfvctl-11 IaIDG card">
+                        <img class="img-placeholder" alt="Nhà Có 5 Nàng Tiên" src="/main/assets/img/thumpgray-16x9.png">
+                        <div class="style__Box-jfvctl-10 ildniP">
+                          <img alt="Nhà Có 5 Nàng Tiên" class="hover-img"
+                            src="//assets.glxplay.io/images/w400/title/five-fairies-in-the-house_web_posterLandscape_285588e8d99b43b71130cfd2a973bbd9.jpg">
+                          <div class="style__PosterTagBottom-jfvctl-38 gqFsbl"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="style__Arrow-jfvctl-7 style__ArrowNext-jfvctl-9 eshCae">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 492.004 492.004" width="30px" height="30px"
+                    class="arrow-right">
+                    <path
+                      d="M382.678,226.804L163.73,7.86C158.666,2.792,151.906,0,144.698,0s-13.968,2.792-19.032,7.86l-16.124,16.12    c-10.492,10.504-10.492,27.576,0,38.064L293.398,245.9l-184.06,184.06c-5.064,5.068-7.86,11.824-7.86,19.028    c0,7.212,2.796,13.968,7.86,19.04l16.124,16.116c5.068,5.068,11.824,7.86,19.032,7.86s13.968-2.792,19.032-7.86L382.678,265    c5.076-5.084,7.864-11.872,7.848-19.088C390.542,238.668,387.754,231.884,382.678,226.804z"
+                      data-original="#000000" class="active-path" data-old_color="#000000"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ribbon-landscape">
+        <div class="style__WrapTitle-sc-19ylk1h-0 hZlIug">
+          <a class="link" href="/browse/ribbon/gpwd-web-drama">
+            <div class="style__Title-sc-19ylk1h-1 eHRgDX">Galaxy Play Originals <svg xmlns="http://www.w3.org/2000/svg"
+                xmlnsXlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+                <defs>
+                  <path id="prefix__a" d="M0 0h24v24H0z"></path>
+                </defs>
+                <g fill="none" fill-rule="evenodd">
+                  <mask id="prefix__b" fill="#fff">
+                    <use xlink:href="#prefix__a"></use>
+                  </mask>
+                  <path fill="#FFF" d="M7.973 0l-2.83 2.83 9.17 9.17-9.17 9.17L7.973 24l12-12z" mask="url(#prefix__b)">
+                  </path>
+                </g>
+              </svg>
+            </div>
+          </a>
+        </div>
+        <div class="style__RowContainer-jfvctl-0 gABwHd row-container" data-list="gpwd-web-drama" id="row-2">
+          <div class="style__Container-jfvctl-1 huYqWP">
+            <div class="style__RowContent-jfvctl-2 dDqRof">
+              <div class="style__Slider-jfvctl-3 iDoMdF">
+                <div class="style__Arrow-jfvctl-7 style__ArrowPrev-jfvctl-8 jPqXBB">
+                  <svg viewBox="0 0 492 492" width="30px" id="arrow-left">
+                    <path
+                      d="M198.608,246.104L382.664,62.04c5.068-5.056,7.856-11.816,7.856-19.024c0-7.212-2.788-13.968-7.856-19.032l-16.128-16.12    C361.476,2.792,354.712,0,347.504,0s-13.964,2.792-19.028,7.864L109.328,227.008c-5.084,5.08-7.868,11.868-7.848,19.084    c-0.02,7.248,2.76,14.028,7.848,19.112l218.944,218.932c5.064,5.072,11.82,7.864,19.032,7.864c7.208,0,13.964-2.792,19.032-7.864    l16.124-16.12c10.492-10.492,10.492-27.572,0-38.06L198.608,246.104z"
+                      data-original="#000000" class="active-path" data-old_color="#000000"></path>
+                  </svg>
+                </div>
+                <div class="style__SliderMask-jfvctl-4 gmuUnX">
+                  <div class="style__WrapDot-jfvctl-12 cmPOSC slide-dots">
+                    <div class="style__Dot-jfvctl-13 hLCmrL"></div>
+                    <div class="style__Dot-jfvctl-13 fVhHjV"></div>
+                    <div class="style__Dot-jfvctl-13 fVhHjV"></div>
+                  </div>
+                  <div class="style__SliderContent-jfvctl-5 blhUGj">
+                    <div class="style__SliderItem-jfvctl-6 hYzxtc slide-active" style="">
+                      <div class="style__Card-jfvctl-11 IaIDG">
+                        <img class="img-placeholder" alt="Tam Thái Tử" src="/main/assets/img/thumpgray-16x9.png">
+                        <div class="style__Box-jfvctl-10 ildniP">
+                          <div class="style__CardHover-jfvctl-14 kLdcCE">
+                            <a href="/title/tam-thai-tu">
+                              <img alt="Tam Thái Tử" class="hover-img"
+                                src="//assets.glxplay.io/images/w400/title/tam-thai-tu_web_posterLandscape_8823c694fadcd0ca81d4499c934a46a6.jpg">
+                            </a>
+                            <div class="style__PosterTagBottom-jfvctl-38 gqFsbl"></div>
+                            <a href="/title/tam-thai-tu"></a>
+                            <div class="style__ListAction-jfvctl-15 kYbrCz"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="style__SliderItem-jfvctl-6 hYzxtc slide-active" style="">
+                      <div class="style__Card-jfvctl-11 IaIDG">
+                        <img class="img-placeholder" alt="Đặc Nhiệm Hốt Sao" src="/main/assets/img/thumpgray-16x9.png">
+                        <div class="style__Box-jfvctl-10 ildniP">
+                          <div class="style__CardHover-jfvctl-14 kLdcCE">
+                            <a href="/title/dac-nhiem-hot-sao">
+                              <img alt="Đặc Nhiệm Hốt Sao" class="hover-img"
+                                src="//assets.glxplay.io/images/w400/title/dac-nhiem-hot-sao_web_posterLandscape_140cd546e1fc9b892131cedc1e572fbd.jpg">
+                            </a>
+                            <img src="https://assets.glxplay.io/static/web_logo_original1.png"
+                              class="style__ItemPosterTagTop-jfvctl-40 kvbwaH">
+                            <div class="style__PosterTagBottom-jfvctl-38 gqFsbl"></div>
+                            <a href="/title/dac-nhiem-hot-sao"></a>
+                            <div class="style__ListAction-jfvctl-15 kYbrCz"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="style__SliderItem-jfvctl-6 hYzxtc slide-active" style="">
+                      <div class="style__Card-jfvctl-11 IaIDG">
+                        <img class="img-placeholder" alt="Sugar Daddy vs Sugar Baby"
+                          src="/main/assets/img/thumpgray-16x9.png">
+                        <div class="style__Box-jfvctl-10 ildniP">
+                          <div class="style__CardHover-jfvctl-14 kLdcCE">
+                            <a href="/title/sugar-daddy-vs-sugar-baby-bo-duong-con-nuoi">
+                              <img alt="Sugar Daddy vs Sugar Baby" class="hover-img"
+                                src="//assets.glxplay.io/images/w400/title/sugar-daddy-vs-sugar-baby-bo-duong-con-nuoi_web_posterLandscape_914fe30a0742cdc292b41e9fe95b45cc.jpg">
+                            </a>
+                            <div class="style__PosterTagBottom-jfvctl-38 gqFsbl"></div>
+                            <a href="/title/sugar-daddy-vs-sugar-baby-bo-duong-con-nuoi"></a>
+                            <div class="style__ListAction-jfvctl-15 kYbrCz"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="style__SliderItem-jfvctl-6 hYzxtc slide-active" style="">
+                      <div class="style__Card-jfvctl-11 IaIDG">
+                        <img class="img-placeholder" alt="Trong Màn Đêm Không Chớp Mắt"
+                          src="/main/assets/img/thumpgray-16x9.png">
+                        <div class="style__Box-jfvctl-10 ildniP">
+                          <div class="style__CardHover-jfvctl-14 kLdcCE">
+                            <a href="/title/trong-man-dem-khong-chop-mat-vietnam-true-crimes">
+                              <img alt="Trong Màn Đêm Không Chớp Mắt" class="hover-img"
+                                src="//assets.glxplay.io/images/w400/title/vietnams-true-crimes_web_posterLandscape_554053160372d75b47146c60ab160ff6.jpg">
+                            </a>
+                            <div class="style__PosterTagBottom-jfvctl-38 gqFsbl"></div>
+                            <a href="/title/trong-man-dem-khong-chop-mat-vietnam-true-crimes"></a>
+                            <div class="style__ListAction-jfvctl-15 kYbrCz"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="style__SliderItem-jfvctl-6 hYzxtc slide-active" style="">
+                      <div class="style__Card-jfvctl-11 IaIDG">
+                        <img class="img-placeholder" alt="Sói Già" src="/main/assets/img/thumpgray-16x9.png">
+                        <div class="style__Box-jfvctl-10 ildniP">
+                          <div class="style__CardHover-jfvctl-14 kLdcCE">
+                            <a href="/title/soi-gia-mad-wolf">
+                              <img alt="Sói Già" class="hover-img"
+                                src="//assets.glxplay.io/images/w400/title/soi-gia-mad-wolf_web_posterLandscape_e96908eb817fb2a9bed0cc3961a98fa4.jpg">
+                            </a>
+                            <div class="style__PosterTagBottom-jfvctl-38 gqFsbl"></div>
+                            <a href="/title/soi-gia-mad-wolf"></a>
+                            <div class="style__ListAction-jfvctl-15 kYbrCz"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="style__SliderItem-jfvctl-6 hYzxtc">
+                      <div class="style__Card-jfvctl-11 IaIDG card">
+                        <img class="img-placeholder" alt="Sugar Mommy vs. Sugar Boy"
+                          src="/main/assets/img/thumpgray-16x9.png">
+                        <div class="style__Box-jfvctl-10 ildniP">
+                          <img alt="Sugar Mommy vs. Sugar Boy" class="hover-img"
+                            src="//assets.glxplay.io/images/w400/title/sugar-boy-vs-sugar-mommy_web_posterLandscape_8733ce11d904d13a225a9406ac986d6e.jpg">
+                          <div class="style__PosterTagBottom-jfvctl-38 gqFsbl"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="style__SliderItem-jfvctl-6 hYzxtc">
+                      <div class="style__Card-jfvctl-11 IaIDG card">
+                        <img class="img-placeholder" alt="Mắt Của Quỷ" src="/main/assets/img/thumpgray-16x9.png">
+                        <div class="style__Box-jfvctl-10 ildniP">
+                          <img alt="Mắt Của Quỷ" class="hover-img"
+                            src="//assets.glxplay.io/images/w400/title/mat-cua-quy_web_posterLandscape_3484e7763d1d6b70e94ca928934892f7.jpg">
+                          <img src="https://assets.glxplay.io/static/web_logo_original1.png"
+                            class="style__ItemPosterTagTop-jfvctl-40 kvbwaH">
+                          <div class="style__PosterTagBottom-jfvctl-38 gqFsbl"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="style__SliderItem-jfvctl-6 hYzxtc">
+                      <div class="style__Card-jfvctl-11 IaIDG card">
+                        <img class="img-placeholder" alt="Chị Mẹ Học Yêu" src="/main/assets/img/thumpgray-16x9.png">
+                        <div class="style__Box-jfvctl-10 ildniP">
+                          <img alt="Chị Mẹ Học Yêu" class="hover-img"
+                            src="//assets.glxplay.io/images/w400/title/chi-me-hoc-yeu-honey-we-need-to-talk_web_posterLandscape_4185d00dab139a7b9e37f3ccaa8a6ee1.jpg">
+                          <img src="https://assets.glxplay.io/static/web_logo_original1.png"
+                            class="style__ItemPosterTagTop-jfvctl-40 kvbwaH">
+                          <div class="style__PosterTagBottom-jfvctl-38 gqFsbl"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="style__SliderItem-jfvctl-6 hYzxtc">
+                      <div class="style__Card-jfvctl-11 IaIDG card">
+                        <img class="img-placeholder" alt="Thiên Linh Cái: Chuyện Chưa Kể"
+                          src="/main/assets/img/thumpgray-16x9.png">
+                        <div class="style__Box-jfvctl-10 ildniP">
+                          <img alt="Thiên Linh Cái: Chuyện Chưa Kể" class="hover-img"
+                            src="//assets.glxplay.io/images/w400/title/kumanthong-the-untold-story_web_posterLandscape_33d629b53c47cf578098971c42d03209.jpg">
+                          <div class="style__PosterTagBottom-jfvctl-38 gqFsbl"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="style__SliderItem-jfvctl-6 hYzxtc">
+                      <div class="style__Card-jfvctl-11 IaIDG card">
+                        <img class="img-placeholder" alt="Gái Ngàn Đô" src="/main/assets/img/thumpgray-16x9.png">
+                        <div class="style__Box-jfvctl-10 ildniP">
+                          <img alt="Gái Ngàn Đô" class="hover-img"
+                            src="//assets.glxplay.io/images/w400/title/gai-ngan-do_web_posterLandscape_53e78025ec95598613bdc2e0abebf1b7.jpg">
+                          <img src="https://assets.glxplay.io/static/web_logo_original1.png"
+                            class="style__ItemPosterTagTop-jfvctl-40 kvbwaH">
+                          <div class="style__PosterTagBottom-jfvctl-38 gqFsbl"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="style__SliderItem-jfvctl-6 hYzxtc">
+                      <div class="style__Card-jfvctl-11 IaIDG card">
+                        <img class="img-placeholder" alt="D R 3 A M - Dị Chuyện"
+                          src="/main/assets/img/thumpgray-16x9.png">
+                        <div class="style__Box-jfvctl-10 ildniP">
+                          <img alt="D R 3 A M - Dị Chuyện" class="hover-img"
+                            src="//assets.glxplay.io/images/w400/title/dr3am-di-chuyen_web_posterLandscape_b506d5b29f94a183ba26d94588655691.jpg">
+                          <img src="https://assets.glxplay.io/static/web_logo_original1.png"
+                            class="style__ItemPosterTagTop-jfvctl-40 kvbwaH">
+                          <div class="style__PosterTagBottom-jfvctl-38 gqFsbl"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="style__Arrow-jfvctl-7 style__ArrowNext-jfvctl-9 eshCae">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 492.004 492.004" width="30px" height="30px"
+                    class="arrow-right">
+                    <path
+                      d="M382.678,226.804L163.73,7.86C158.666,2.792,151.906,0,144.698,0s-13.968,2.792-19.032,7.86l-16.124,16.12    c-10.492,10.504-10.492,27.576,0,38.064L293.398,245.9l-184.06,184.06c-5.064,5.068-7.86,11.824-7.86,19.028    c0,7.212,2.796,13.968,7.86,19.04l16.124,16.116c5.068,5.068,11.824,7.86,19.032,7.86s13.968-2.792,19.032-7.86L382.678,265    c5.076-5.084,7.864-11.872,7.848-19.088C390.542,238.668,387.754,231.884,382.678,226.804z"
+                      data-original="#000000" class="active-path" data-old_color="#000000"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ribbon-landscape">
+        <div class="style__WrapTitle-sc-19ylk1h-0 hZlIug">
+          <a class="link" href="/browse/ribbon/gp-web-series">
+            <div class="style__Title-sc-19ylk1h-1 eHRgDX">Web Series Việt Thịnh Hành <svg
+                xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="24" height="24"
+                viewBox="0 0 24 24">
+                <defs>
+                  <path id="prefix__a" d="M0 0h24v24H0z"></path>
+                </defs>
+                <g fill="none" fill-rule="evenodd">
+                  <mask id="prefix__b" fill="#fff">
+                    <use xlink:href="#prefix__a"></use>
+                  </mask>
+                  <path fill="#FFF" d="M7.973 0l-2.83 2.83 9.17 9.17-9.17 9.17L7.973 24l12-12z" mask="url(#prefix__b)">
+                  </path>
+                </g>
+              </svg>
+            </div>
+          </a>
+        </div>
+        <div class="style__RowContainer-jfvctl-0 gABwHd row-container" data-list="gp-web-series" id="row-3">
+          <div class="style__Container-jfvctl-1 huYqWP">
+            <div class="style__RowContent-jfvctl-2 dDqRof">
+              <div class="style__Slider-jfvctl-3 iDoMdF">
+                <div class="style__Arrow-jfvctl-7 style__ArrowPrev-jfvctl-8 jPqXBB">
+                  <svg viewBox="0 0 492 492" width="30px" id="arrow-left">
+                    <path
+                      d="M198.608,246.104L382.664,62.04c5.068-5.056,7.856-11.816,7.856-19.024c0-7.212-2.788-13.968-7.856-19.032l-16.128-16.12    C361.476,2.792,354.712,0,347.504,0s-13.964,2.792-19.028,7.864L109.328,227.008c-5.084,5.08-7.868,11.868-7.848,19.084    c-0.02,7.248,2.76,14.028,7.848,19.112l218.944,218.932c5.064,5.072,11.82,7.864,19.032,7.864c7.208,0,13.964-2.792,19.032-7.864    l16.124-16.12c10.492-10.492,10.492-27.572,0-38.06L198.608,246.104z"
+                      data-original="#000000" class="active-path" data-old_color="#000000"></path>
+                  </svg>
+                </div>
+                <div class="style__SliderMask-jfvctl-4 gmuUnX">
+                  <div class="style__WrapDot-jfvctl-12 cmPOSC slide-dots">
+                    <div class="style__Dot-jfvctl-13 hLCmrL"></div>
+                    <div class="style__Dot-jfvctl-13 fVhHjV"></div>
+                    <div class="style__Dot-jfvctl-13 fVhHjV"></div>
+                    <div class="style__Dot-jfvctl-13 fVhHjV"></div>
+                  </div>
+                  <div class="style__SliderContent-jfvctl-5 blhUGj">
+                    <div class="style__SliderItem-jfvctl-6 hYzxtc slide-active" style="">
+                      <div class="style__Card-jfvctl-11 IaIDG">
+                        <img class="img-placeholder" alt="Ai Là Người Thứ Ba" src="/main/assets/img/thumpgray-16x9.png">
+                        <div class="style__Box-jfvctl-10 ildniP">
+                          <div class="style__CardHover-jfvctl-14 kLdcCE">
+                            <a href="/title/who-is-the-third-wheel">
+                              <img alt="Ai Là Người Thứ Ba" class="hover-img"
+                                src="//assets.glxplay.io/images/w400/title/who-is-the-third-wheel_web_posterLandscape_1c13ead8b65ec06f7b74cb542af9ecc2.jpg">
+                            </a>
+                            <div class="style__PosterTagBottom-jfvctl-38 gqFsbl"></div>
+                            <a href="/title/who-is-the-third-wheel"></a>
+                            <div class="style__ListAction-jfvctl-15 kYbrCz"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="style__SliderItem-jfvctl-6 hYzxtc slide-active" style="">
+                      <div class="style__Card-jfvctl-11 IaIDG">
+                        <img class="img-placeholder" alt="Một Nén Nhang" src="/main/assets/img/thumpgray-16x9.png">
+                        <div class="style__Box-jfvctl-10 ildniP">
+                          <div class="style__CardHover-jfvctl-14 kLdcCE">
+                            <a href="/title/mot-nen-nhang">
+                              <img alt="Một Nén Nhang" class="hover-img"
+                                src="//assets.glxplay.io/images/w400/title/mot-nen-nhang_web_posterLandscape_f026bc9b1d5560049a838edd7ede4f0f.jpg">
+                            </a>
+                            <div class="style__PosterTagBottom-jfvctl-38 gqFsbl"></div>
+                            <a href="/title/mot-nen-nhang"></a>
+                            <div class="style__ListAction-jfvctl-15 kYbrCz"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="style__SliderItem-jfvctl-6 hYzxtc slide-active" style="">
+                      <div class="style__Card-jfvctl-11 IaIDG">
+                        <img class="img-placeholder" alt="Vi Cá Tiền Truyện" src="/main/assets/img/thumpgray-16x9.png">
+                        <div class="style__Box-jfvctl-10 ildniP">
+                          <div class="style__CardHover-jfvctl-14 kLdcCE">
+                            <a href="/title/vi-ca-tien-truyen">
+                              <img alt="Vi Cá Tiền Truyện" class="hover-img"
+                                src="//assets.glxplay.io/images/w400/title/vi-ca-tien-truyen_web_posterLandscape_1d770d1e0410cf149a74675fa188e079.jpg">
+                            </a>
+                            <div class="style__PosterTagBottom-jfvctl-38 gqFsbl"></div>
+                            <a href="/title/vi-ca-tien-truyen"></a>
+                            <div class="style__ListAction-jfvctl-15 kYbrCz"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="style__SliderItem-jfvctl-6 hYzxtc slide-active" style="">
+                      <div class="style__Card-jfvctl-11 IaIDG">
+                        <img class="img-placeholder" alt="Bộ Tứ Oan Gia" src="/main/assets/img/thumpgray-16x9.png">
+                        <div class="style__Box-jfvctl-10 ildniP">
+                          <div class="style__CardHover-jfvctl-14 kLdcCE">
+                            <a href="/title/bo-tu-oan-gia">
+                              <img alt="Bộ Tứ Oan Gia" class="hover-img"
+                                src="//assets.glxplay.io/images/w400/title/bo-tu-oan-gia_web_posterLandscape_b0e297fa5f1e782a1cbffe758925116b.jpg">
+                            </a>
+                            <div class="style__PosterTagBottom-jfvctl-38 gqFsbl"></div>
+                            <a href="/title/bo-tu-oan-gia"></a>
+                            <div class="style__ListAction-jfvctl-15 kYbrCz"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="style__SliderItem-jfvctl-6 hYzxtc slide-active" style="">
+                      <div class="style__Card-jfvctl-11 IaIDG">
+                        <img class="img-placeholder" alt="Cô Nàng Lấp Lánh" src="/main/assets/img/thumpgray-16x9.png">
+                        <div class="style__Box-jfvctl-10 ildniP">
+                          <div class="style__CardHover-jfvctl-14 kLdcCE">
+                            <a href="/title/shining-girl">
+                              <img alt="Cô Nàng Lấp Lánh" class="hover-img"
+                                src="//assets.glxplay.io/images/w400/title/shining-girl_web_posterLandscape_055f6c4b541f5305a37af37851e30e8b.jpg">
+                            </a>
+                            <img src="https://assets.glxplay.io/static/web_exclusive1.png"
+                              class="style__ItemPosterTagTop-jfvctl-40 kvbwaH">
+                            <div class="style__PosterTagBottom-jfvctl-38 gqFsbl"></div>
+                            <a href="/title/shining-girl"></a>
+                            <div class="style__ListAction-jfvctl-15 kYbrCz"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="style__SliderItem-jfvctl-6 hYzxtc">
+                      <div class="style__Card-jfvctl-11 IaIDG card">
+                        <img class="img-placeholder" alt="Chuyện Xóm Tui" src="/main/assets/img/thumpgray-16x9.png">
+                        <div class="style__Box-jfvctl-10 ildniP">
+                          <img alt="Chuyện Xóm Tui" class="hover-img"
+                            src="//assets.glxplay.io/images/w400/title/chuyen-xom-tui_web_posterLandscape_8b5a3ccfbd9333906787aa9f2ed80cc7.jpg">
+                          <img src="https://assets.glxplay.io/static/web_exclusive1.png"
+                            class="style__ItemPosterTagTop-jfvctl-40 kvbwaH">
+                          <div class="style__PosterTagBottom-jfvctl-38 gqFsbl"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="style__SliderItem-jfvctl-6 hYzxtc">
+                      <div class="style__Card-jfvctl-11 IaIDG card">
+                        <img class="img-placeholder" alt="Đại Kê Chạy Đi" src="/main/assets/img/thumpgray-16x9.png">
+                        <div class="style__Box-jfvctl-10 ildniP">
+                          <img alt="Đại Kê Chạy Đi" class="hover-img"
+                            src="//assets.glxplay.io/images/w400/title/dai-ke-chay-di_web_posterLandscape_49767b40d8c83dc797c1237b07ec690a.jpg">
+                          <div class="style__PosterTagBottom-jfvctl-38 gqFsbl"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="style__SliderItem-jfvctl-6 hYzxtc">
+                      <div class="style__Card-jfvctl-11 IaIDG card">
+                        <img class="img-placeholder" alt="Trật Tự Mới" src="/main/assets/img/thumpgray-16x9.png">
+                        <div class="style__Box-jfvctl-10 ildniP">
+                          <img alt="Trật Tự Mới" class="hover-img"
+                            src="//assets.glxplay.io/images/w400/title/trat-tu-moi_web_posterLandscape_f3490f81dba92076b877ef43fdc2de1e.jpg">
+                          <div class="style__PosterTagBottom-jfvctl-38 gqFsbl"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="style__SliderItem-jfvctl-6 hYzxtc">
+                      <div class="style__Card-jfvctl-11 IaIDG card">
+                        <img class="img-placeholder" alt="Ai Chết Giơ Tay" src="/main/assets/img/thumpgray-16x9.png">
+                        <div class="style__Box-jfvctl-10 ildniP">
+                          <img alt="Ai Chết Giơ Tay" class="hover-img"
+                            src="//assets.glxplay.io/images/w400/title/ai-chet-gio-tay_web_posterLandscape_89052dea9567e627f55cf4db3bac1dff.jpg">
+                          <div class="style__PosterTagBottom-jfvctl-38 gqFsbl"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="style__SliderItem-jfvctl-6 hYzxtc">
+                      <div class="style__Card-jfvctl-11 IaIDG card">
+                        <img class="img-placeholder" alt="1977 Vlog" src="/main/assets/img/thumpgray-16x9.png">
+                        <div class="style__Box-jfvctl-10 ildniP">
+                          <img alt="1977 Vlog" class="hover-img"
+                            src="//assets.glxplay.io/images/w400/title/1977-vlog_web_posterLandscape_9aeb67d7177899b6e721ed4ec78dbe09.jpg">
+                          <div class="style__PosterTagBottom-jfvctl-38 gqFsbl"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="style__SliderItem-jfvctl-6 hYzxtc">
+                      <div class="style__Card-jfvctl-11 IaIDG card">
+                        <img class="img-placeholder" alt="Biệt Đội Công Lý" src="/main/assets/img/thumpgray-16x9.png">
+                        <div class="style__Box-jfvctl-10 ildniP">
+                          <img alt="Biệt Đội Công Lý" class="hover-img"
+                            src="//assets.glxplay.io/images/w400/title/biet-doi-cong-ly_web_posterLandscape_8a46fd5f5e68292b907a3fa95127d96a.jpg">
+                          <div class="style__PosterTagBottom-jfvctl-38 gqFsbl"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="style__Arrow-jfvctl-7 style__ArrowNext-jfvctl-9 eshCae">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 492.004 492.004" width="30px" height="30px"
+                    class="arrow-right">
+                    <path
+                      d="M382.678,226.804L163.73,7.86C158.666,2.792,151.906,0,144.698,0s-13.968,2.792-19.032,7.86l-16.124,16.12    c-10.492,10.504-10.492,27.576,0,38.064L293.398,245.9l-184.06,184.06c-5.064,5.068-7.86,11.824-7.86,19.028    c0,7.212,2.796,13.968,7.86,19.04l16.124,16.116c5.068,5.068,11.824,7.86,19.032,7.86s13.968-2.792,19.032-7.86L382.678,265    c5.076-5.084,7.864-11.872,7.848-19.088C390.542,238.668,387.754,231.884,382.678,226.804z"
+                      data-original="#000000" class="active-path" data-old_color="#000000"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ribbon-landscape">
+        <div class="style__WrapTitle-sc-19ylk1h-0 hZlIug">
+          <a class="link" href="/browse/ribbon/top-dramas">
+            <div class="style__Title-sc-19ylk1h-1 eHRgDX">Phim Bộ Châu Á "Hot" <svg xmlns="http://www.w3.org/2000/svg"
+                xmlnsXlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+                <defs>
+                  <path id="prefix__a" d="M0 0h24v24H0z"></path>
+                </defs>
+                <g fill="none" fill-rule="evenodd">
+                  <mask id="prefix__b" fill="#fff">
+                    <use xlink:href="#prefix__a"></use>
+                  </mask>
+                  <path fill="#FFF" d="M7.973 0l-2.83 2.83 9.17 9.17-9.17 9.17L7.973 24l12-12z" mask="url(#prefix__b)">
+                  </path>
+                </g>
+              </svg>
+            </div>
+          </a>
+        </div>
+        <div class="style__RowContainer-jfvctl-0 gABwHd row-container" data-list="top-dramas" id="row-4">
+          <div class="style__Container-jfvctl-1 huYqWP">
+            <div class="style__RowContent-jfvctl-2 dDqRof">
+              <div class="style__Slider-jfvctl-3 iDoMdF">
+                <div class="style__Arrow-jfvctl-7 style__ArrowPrev-jfvctl-8 jPqXBB">
+                  <svg viewBox="0 0 492 492" width="30px" id="arrow-left">
+                    <path
+                      d="M198.608,246.104L382.664,62.04c5.068-5.056,7.856-11.816,7.856-19.024c0-7.212-2.788-13.968-7.856-19.032l-16.128-16.12    C361.476,2.792,354.712,0,347.504,0s-13.964,2.792-19.028,7.864L109.328,227.008c-5.084,5.08-7.868,11.868-7.848,19.084    c-0.02,7.248,2.76,14.028,7.848,19.112l218.944,218.932c5.064,5.072,11.82,7.864,19.032,7.864c7.208,0,13.964-2.792,19.032-7.864    l16.124-16.12c10.492-10.492,10.492-27.572,0-38.06L198.608,246.104z"
+                      data-original="#000000" class="active-path" data-old_color="#000000"></path>
+                  </svg>
+                </div>
+                <div class="style__SliderMask-jfvctl-4 gmuUnX">
+                  <div class="style__WrapDot-jfvctl-12 cmPOSC slide-dots">
+                    <div class="style__Dot-jfvctl-13 hLCmrL"></div>
+                    <div class="style__Dot-jfvctl-13 fVhHjV"></div>
+                    <div class="style__Dot-jfvctl-13 fVhHjV"></div>
+                    <div class="style__Dot-jfvctl-13 fVhHjV"></div>
+                  </div>
+                  <div class="style__SliderContent-jfvctl-5 blhUGj">
+                    <div class="style__SliderItem-jfvctl-6 hYzxtc slide-active" style="">
+                      <div class="style__Card-jfvctl-11 IaIDG">
+                        <img class="img-placeholder" alt="Happiness" src="/main/assets/img/thumpgray-16x9.png">
+                        <div class="style__Box-jfvctl-10 ildniP">
+                          <div class="style__CardHover-jfvctl-14 kLdcCE">
+                            <a href="/title/happiness">
+                              <img alt="Happiness" class="hover-img"
+                                src="//assets.glxplay.io/images/w400/title/happiness_web_posterLandscape_8ab79c9edc6d1b4d12ca1ccb951cd46c.jpg">
+                            </a>
+                            <div class="style__PosterTagBottom-jfvctl-38 gqFsbl">
+                              <img src="https://assets.glxplay.io/static/web_new_episode1.png"
+                                class="style__ItemPosterTagBottom-jfvctl-39 dYnaGT">
+                              <img src="https://assets.glxplay.io/static/web_parallel1.png"
+                                class="style__ItemPosterTagBottom-jfvctl-39 dYnaGT">
+                            </div>
+                            <a href="/title/happiness"></a>
+                            <div class="style__ListAction-jfvctl-15 kYbrCz"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="style__SliderItem-jfvctl-6 hYzxtc slide-active" style="">
+                      <div class="style__Card-jfvctl-11 IaIDG">
+                        <img class="img-placeholder" alt="Lưu Ly Mỹ Nhân Sát" src="/main/assets/img/thumpgray-16x9.png">
+                        <div class="style__Box-jfvctl-10 ildniP">
+                          <div class="style__CardHover-jfvctl-14 kLdcCE">
+                            <a href="/title/love-and-redemption">
+                              <img alt="Lưu Ly Mỹ Nhân Sát" class="hover-img"
+                                src="//assets.glxplay.io/images/w400/title/love-and-redemption_web_posterLandscape_a393104b8f3a4d7d47c9ca8ea375d4c2.jpg">
+                            </a>
+                            <div class="style__PosterTagBottom-jfvctl-38 gqFsbl"></div>
+                            <a href="/title/love-and-redemption"></a>
+                            <div class="style__ListAction-jfvctl-15 kYbrCz"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="style__SliderItem-jfvctl-6 hYzxtc slide-active" style="">
+                      <div class="style__Card-jfvctl-11 IaIDG">
+                        <img class="img-placeholder" alt="Phiên Dịch Viên Xinh Đẹp"
+                          src="/main/assets/img/thumpgray-16x9.png">
+                        <div class="style__Box-jfvctl-10 ildniP">
+                          <div class="style__CardHover-jfvctl-14 kLdcCE">
+                            <a href="/title/dear-translator">
+                              <img alt="Phiên Dịch Viên Xinh Đẹp" class="hover-img"
+                                src="//assets.glxplay.io/images/w400/title/dear-translator_web_posterLandscape_6fe31e258461130290c77640a69b2638.jpg">
+                            </a>
+                            <div class="style__PosterTagBottom-jfvctl-38 gqFsbl"></div>
+                            <a href="/title/dear-translator"></a>
+                            <div class="style__ListAction-jfvctl-15 kYbrCz"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="style__SliderItem-jfvctl-6 hYzxtc slide-active" style="">
+                      <div class="style__Card-jfvctl-11 IaIDG">
+                        <img class="img-placeholder" alt="Phác Họa Kẻ Sát Nhân"
+                          src="/main/assets/img/thumpgray-16x9.png">
+                        <div class="style__Box-jfvctl-10 ildniP">
+                          <div class="style__CardHover-jfvctl-14 kLdcCE">
+                            <a href="/title/sketch">
+                              <img alt="Phác Họa Kẻ Sát Nhân" class="hover-img"
+                                src="//assets.glxplay.io/images/w400/title/sketch_web_posterLandscape_4b4fcd1080afbdaf7268963e23cebe3b.jpg">
+                            </a>
+                            <div class="style__PosterTagBottom-jfvctl-38 gqFsbl"></div>
+                            <a href="/title/sketch"></a>
+                            <div class="style__ListAction-jfvctl-15 kYbrCz"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="style__SliderItem-jfvctl-6 hYzxtc slide-active" style="">
+                      <div class="style__Card-jfvctl-11 IaIDG">
+                        <img class="img-placeholder" alt="Người Đàm Phán 2018"
+                          src="/main/assets/img/thumpgray-16x9.png">
+                        <div class="style__Box-jfvctl-10 ildniP">
+                          <div class="style__CardHover-jfvctl-14 kLdcCE">
+                            <a href="/title/negotiator">
+                              <img alt="Người Đàm Phán 2018" class="hover-img"
+                                src="//assets.glxplay.io/images/w400/title/negotiator_web_posterLandscape_8c8707abd60f6b919245299ce6b468a9.jpg">
+                            </a>
+                            <div class="style__PosterTagBottom-jfvctl-38 gqFsbl"></div>
+                            <a href="/title/negotiator"></a>
+                            <div class="style__ListAction-jfvctl-15 kYbrCz"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="style__SliderItem-jfvctl-6 hYzxtc">
+                      <div class="style__Card-jfvctl-11 IaIDG card">
+                        <img class="img-placeholder" alt="Lời Hồi Đáp 1988" src="/main/assets/img/thumpgray-16x9.png">
+                        <div class="style__Box-jfvctl-10 ildniP">
+                          <img alt="Lời Hồi Đáp 1988" class="hover-img"
+                            src="//assets.glxplay.io/images/w400/title/reply-1988_web_posterLandscape_ab08cb8af70687bcd3df5e99b60d250e.jpg">undefined
+                          <div class="style__PosterTagBottom-jfvctl-38 gqFsbl"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="style__SliderItem-jfvctl-6 hYzxtc">
+                      <div class="style__Card-jfvctl-11 IaIDG card">
+                        <img class="img-placeholder" alt="Mặt Trời Đen"
+                          src="/main/assets/img/thumpgray-16x9.png">undefined<div class="style__Box-jfvctl-10 ildniP">
+                          undefined<img alt="Mặt Trời Đen" class="hover-img"
+                            src="//assets.glxplay.io/images/w400/title/the-veil-2021_web_posterLandscape_16420ce491c96707d5314445b8647235.jpg">undefined
+                          <div class="style__PosterTagBottom-jfvctl-38 gqFsbl"></div>undefined</div>undefined
+                      </div>
+                    </div>
+                    <div class="style__SliderItem-jfvctl-6 hYzxtc">undefined<div
+                        class="style__Card-jfvctl-11 IaIDG card">undefined<img class="img-placeholder"
+                          alt="Cô Gái Mơ Hồ" src="/main/assets/img/thumpgray-16x9.png">undefined<div
+                          class="style__Box-jfvctl-10 ildniP">undefined<img alt="Cô Gái Mơ Hồ" class="hover-img"
+                            src="//assets.glxplay.io/images/w400/title/misty_web_posterLandscape_5ca649c0f679edc3ded221b616a7540e.jpg">undefined
+                          <div class="style__PosterTagBottom-jfvctl-38 gqFsbl"></div>undefined</div>undefined</div>
+                      undefined</div>undefined<div class="style__SliderItem-jfvctl-6 hYzxtc">undefined<div
+                        class="style__Card-jfvctl-11 IaIDG card">undefined<img class="img-placeholder"
+                          alt="Bạn Gái Tôi Là Hồ Ly" src="/main/assets/img/thumpgray-16x9.png">undefined<div
+                          class="style__Box-jfvctl-10 ildniP">undefined<img alt="Bạn Gái Tôi Là Hồ Ly" class="hover-img"
+                            src="//assets.glxplay.io/images/w400/title/my-girlfriend-is-a-gumiho_web_posterLandscape_c6b991e3ca3cc7db277c63c9a853eecb.jpg">undefined
+                          <div class="style__PosterTagBottom-jfvctl-38 gqFsbl"></div>undefined</div>undefined</div>
+                      undefined</div>undefined<div class="style__SliderItem-jfvctl-6 hYzxtc">undefined<div
+                        class="style__Card-jfvctl-11 IaIDG card">undefined<img class="img-placeholder"
+                          alt="Cuộc Chiến Thượng Lưu 2" src="/main/assets/img/thumpgray-16x9.png">undefined<div
+                          class="style__Box-jfvctl-10 ildniP">undefined<img alt="Cuộc Chiến Thượng Lưu 2"
+                            class="hover-img"
+                            src="//assets.glxplay.io/images/w400/title/penthouse-2_web_posterLandscape_3612af8052585c8351984879c6f2365f.jpg">undefined
+                          <div class="style__PosterTagBottom-jfvctl-38 gqFsbl"></div>undefined</div>undefined</div>
+                      undefined</div>undefined<div class="style__SliderItem-jfvctl-6 hYzxtc">undefined<div
+                        class="style__Card-jfvctl-11 IaIDG card">undefined<img class="img-placeholder"
+                          alt="Cuộc Chiến Thượng Lưu 1" src="/main/assets/img/thumpgray-16x9.png">undefined<div
+                          class="style__Box-jfvctl-10 ildniP">undefined<img alt="Cuộc Chiến Thượng Lưu 1"
+                            class="hover-img"
+                            src="//assets.glxplay.io/images/w400/title/penthouse-1_web_posterLandscape_bb4293432926651a092312f2ed220cda.jpg">undefined
+                          <div class="style__PosterTagBottom-jfvctl-38 gqFsbl"></div>undefined</div>undefined</div>
+                      undefined</div>undefined
+                  </div>undefined
+                </div>undefined<div class="style__Arrow-jfvctl-7 style__ArrowNext-jfvctl-9 eshCae">undefined
+                  <svgundefinedxmlns="http: //www.w3.org/2000/svg" viewBox="0 0 492.004 492.004" width="30px"
+                    height="30px" class="arrow-right">undefined<path
+                      d="M382.678,226.804L163.73,7.86C158.666,2.792,151.906,0,144.698,0s-13.968,2.792-19.032,7.86l-16.124,16.12    c-10.492,10.504-10.492,27.576,0,38.064L293.398,245.9l-184.06,184.06c-5.064,5.068-7.86,11.824-7.86,19.028    c0,7.212,2.796,13.968,7.86,19.04l16.124,16.116c5.068,5.068,11.824,7.86,19.032,7.86s13.968-2.792,19.032-7.86L382.678,265    c5.076-5.084,7.864-11.872,7.848-19.088C390.542,238.668,387.754,231.884,382.678,226.804z"
+                      data-original="#000000" class="active-path" data-old_color="#000000"></path>
+                    undefined</svg>undefined</div>undefined
+              </div>undefined
+            </div>undefined
+          </div>undefined
+        </div>undefined
+      </div>undefined<div class="ribbon-landscape">undefined<div class="style__WrapTitle-sc-19ylk1h-0 hZlIug">
+          undefined<a class="link" href="/browse/ribbon/tvb-best-tv-dramas">undefined<div
+              class="style__Title-sc-19ylk1h-1 eHRgDX">Phim Bộ TVB Đáng Xemundefined<svgundefinedxmlns="http:
+                //www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="24" height="24"
+                viewBox="0 0 24 24">undefined<defs>undefined<path id="prefix__a" d="M0 0h24v24H0z"></path>undefined
+                </defs>undefined<g fill="none" fill-rule="evenodd">undefined<mask id="prefix__b" fill="#fff">undefined
+                    <use xlink:href="#prefix__a"></use>undefined</mask>undefined<path fill="#FFF"
+                    d="M7.973 0l-2.83 2.83 9.17 9.17-9.17 9.17L7.973 24l12-12z" mask="url(#prefix__b)"></path>undefined
+                </g>undefined</svg>undefined</div>undefined</a>undefined</div>undefined<div
+          class="style__RowContainer-jfvctl-0 gABwHd row-container" data-list="tvb-best-tv-dramas" id="row-5">undefined
+          <div class="style__Container-jfvctl-1 huYqWP">undefined<div class="style__RowContent-jfvctl-2 dDqRof">
+              undefined<div class="style__Slider-jfvctl-3 iDoMdF">undefined<div
+                  class="style__Arrow-jfvctl-7 style__ArrowPrev-jfvctl-8 jPqXBB">undefined<svg viewBox="0 0 492 492"
+                    width="30px" id="arrow-left">undefined<path
+                      d="M198.608,246.104L382.664,62.04c5.068-5.056,7.856-11.816,7.856-19.024c0-7.212-2.788-13.968-7.856-19.032l-16.128-16.12    C361.476,2.792,354.712,0,347.504,0s-13.964,2.792-19.028,7.864L109.328,227.008c-5.084,5.08-7.868,11.868-7.848,19.084    c-0.02,7.248,2.76,14.028,7.848,19.112l218.944,218.932c5.064,5.072,11.82,7.864,19.032,7.864c7.208,0,13.964-2.792,19.032-7.864    l16.124-16.12c10.492-10.492,10.492-27.572,0-38.06L198.608,246.104z"
+                      data-original="#000000" class="active-path" data-old_color="#000000"></path>
+                    undefined</svg>undefined</div>undefined<div class="style__SliderMask-jfvctl-4 gmuUnX">undefined<div
+                    class="style__WrapDot-jfvctl-12 cmPOSC slide-dots">undefined<div
+                      class="style__Dot-jfvctl-13 hLCmrL"></div>undefined<div class="style__Dot-jfvctl-13 fVhHjV"></div>
+                    undefined<div class="style__Dot-jfvctl-13 fVhHjV"></div>undefined<div
+                      class="style__Dot-jfvctl-13 fVhHjV"></div>undefined</div>undefined<div
+                    class="style__SliderContent-jfvctl-5 blhUGj">undefined<div
+                      class="style__SliderItem-jfvctl-6 hYzxtc slide-active"
+                      style="z-index: 4; transform: translate3d(0px, 0px, 0px); transition-duration: 500ms;">undefined
+                      <div class="style__Card-jfvctl-11 IaIDG">undefined<img class="img-placeholder" alt="Mất Dấu 3"
+                          src="/main/assets/img/thumpgray-16x9.png">undefined<div class="style__Box-jfvctl-10 ildniP">
+                          undefined<div class="style__CardHover-jfvctl-14 kLdcCE">undefined<a
+                              href="/title/line-walker-bull-fight">undefined<img alt="Mất Dấu 3" class="hover-img"
+                                src="//assets.glxplay.io/images/w400/title/line-walker-bull-fight_web_posterLandscape_0888cef978e0425accf766d5d18904be.jpg">undefined</a>undefined
+                            <div class="style__PosterTagBottom-jfvctl-38 gqFsbl"></div>undefined<a
+                              href="/title/line-walker-bull-fight"></a>undefined<div
+                              class="style__ListAction-jfvctl-15 kYbrCz"></div>undefined</div>undefined</div>undefined
+                      </div>undefined</div>undefined<div class="style__SliderItem-jfvctl-6 hYzxtc slide-active"
+                      style="z-index: 4; transform: translate3d(0px, 0px, 0px); transition-duration: 500ms;">undefined
+                      <div class="style__Card-jfvctl-11 IaIDG">undefined<img class="img-placeholder" alt="Giải Quyết Sư"
+                          src="/main/assets/img/thumpgray-16x9.png">undefined<div class="style__Box-jfvctl-10 ildniP">
+                          undefined<div class="style__CardHover-jfvctl-14 kLdcCE">undefined<a
+                              href="/title/the-man-who-kills-troubles">undefined<img alt="Giải Quyết Sư"
+                                class="hover-img"
+                                src="//assets.glxplay.io/images/w400/title/the-man-who-kills-troubles_web_posterLandscape_2d7f2a2ec8f2dec935ac6da3d6cc76d0.jpg">undefined</a>undefined
+                            <div class="style__PosterTagBottom-jfvctl-38 gqFsbl"></div>undefined<a
+                              href="/title/the-man-who-kills-troubles"></a>undefined<div
+                              class="style__ListAction-jfvctl-15 kYbrCz"></div>undefined</div>undefined</div>undefined
+                      </div>undefined</div>undefined<div class="style__SliderItem-jfvctl-6 hYzxtc slide-active"
+                      style="z-index: 4; transform: translate3d(0px, 0px, 0px); transition-duration: 500ms;">undefined
+                      <div class="style__Card-jfvctl-11 IaIDG">undefined<img class="img-placeholder"
+                          alt="Bước Qua Ranh Giới 2" src="/main/assets/img/thumpgray-16x9.png">undefined<div
+                          class="style__Box-jfvctl-10 ildniP">undefined<div class="style__CardHover-jfvctl-14 kLdcCE">
+                            undefined<a href="/title/legal-mavericks-2020">undefined<img alt="Bước Qua Ranh Giới 2"
+                                class="hover-img"
+                                src="//assets.glxplay.io/images/w400/title/legal-mavericks-2020_web_posterLandscape_3aaef9108add9a9b04694301c961d353.jpg">undefined</a>undefined
+                            <div class="style__PosterTagBottom-jfvctl-38 gqFsbl"></div>undefined<a
+                              href="/title/legal-mavericks-2020"></a>undefined<div
+                              class="style__ListAction-jfvctl-15 kYbrCz"></div>undefined</div>undefined</div>undefined
+                      </div>undefined</div>undefined<div class="style__SliderItem-jfvctl-6 hYzxtc slide-active"
+                      style="z-index: 4; transform: translate3d(0px, 0px, 0px); transition-duration: 500ms;">undefined
+                      <div class="style__Card-jfvctl-11 IaIDG">undefined<img class="img-placeholder"
+                          alt="Nhân Chứng Rắc Rối" src="/main/assets/img/thumpgray-16x9.png">undefined<div
+                          class="style__Box-jfvctl-10 ildniP">undefined<div class="style__CardHover-jfvctl-14 kLdcCE">
+                            undefined<a href="/title/the-witness">undefined<img alt="Nhân Chứng Rắc Rối"
+                                class="hover-img"
+                                src="//assets.glxplay.io/images/w400/title/the-witness_web_posterLandscape_117c90716b022429e958f7bf77e0520b.jpg">undefined</a>undefined
+                            <div class="style__PosterTagBottom-jfvctl-38 gqFsbl"></div>undefined<a
+                              href="/title/the-witness"></a>undefined<div class="style__ListAction-jfvctl-15 kYbrCz">
+                            </div>undefined</div>undefined</div>undefined</div>undefined</div>undefined<div
+                      class="style__SliderItem-jfvctl-6 hYzxtc slide-active"
+                      style="z-index: 4; transform: translate3d(0px, 0px, 0px); transition-duration: 500ms;">undefined
+                      <div class="style__Card-jfvctl-11 IaIDG">undefined<img class="img-placeholder"
+                          alt="Lời Sám Hối Muộn Màng" src="/main/assets/img/thumpgray-16x9.png">undefined<div
+                          class="style__Box-jfvctl-10 ildniP">undefined<div class="style__CardHover-jfvctl-14 kLdcCE">
+                            undefined<a href="/title/brutally-young">undefined<img alt="Lời Sám Hối Muộn Màng"
+                                class="hover-img"
+                                src="//assets.glxplay.io/images/w400/title/brutally-young_web_posterLandscape_cda7aef70cab3aaeabed4b00785db0c2.jpg">undefined</a>undefined
+                            <div class="style__PosterTagBottom-jfvctl-38 gqFsbl"></div>undefined<a
+                              href="/title/brutally-young"></a>undefined<div class="style__ListAction-jfvctl-15 kYbrCz">
+                            </div>undefined</div>undefined</div>undefined</div>undefined</div>undefined<div
+                      class="style__SliderItem-jfvctl-6 hYzxtc">undefined<div class="style__Card-jfvctl-11 IaIDG card">
+                        undefined<img class="img-placeholder" alt="Vợ Tôi Là Đặc Công"
+                          src="/main/assets/img/thumpgray-16x9.png">undefined<div class="style__Box-jfvctl-10 ildniP">
+                          undefined<img alt="Vợ Tôi Là Đặc Công" class="hover-img"
+                            src="//assets.glxplay.io/images/w400/title/go-go-go-operation-c9_web_posterLandscape_eb92497cadf02cc4a8224e2ee37032ac.jpg">undefined
+                          <div class="style__PosterTagBottom-jfvctl-38 gqFsbl"></div>undefined</div>undefined</div>
+                      undefined</div>undefined<div class="style__SliderItem-jfvctl-6 hYzxtc">undefined<div
+                        class="style__Card-jfvctl-11 IaIDG card">undefined<img class="img-placeholder"
+                          alt="Đối Tác Hôn Nhân" src="/main/assets/img/thumpgray-16x9.png">undefined<div
+                          class="style__Box-jfvctl-10 ildniP">undefined<img alt="Đối Tác Hôn Nhân" class="hover-img"
+                            src="//assets.glxplay.io/images/w400/title/my-commissioned-lover_web_posterLandscape_d9e26f3cd2c61da9dae4bf195025119b.jpg">undefined
+                          <div class="style__PosterTagBottom-jfvctl-38 gqFsbl"></div>undefined</div>undefined</div>
+                      undefined</div>undefined<div class="style__SliderItem-jfvctl-6 hYzxtc">undefined<div
+                        class="style__Card-jfvctl-11 IaIDG card">undefined<img class="img-placeholder"
+                          alt="Quái Kiệt Siêu Hạng" src="/main/assets/img/thumpgray-16x9.png">undefined<div
+                          class="style__Box-jfvctl-10 ildniP">undefined<img alt="Quái Kiệt Siêu Hạng" class="hover-img"
+                            src="//assets.glxplay.io/images/w400/title/al-cappuccino_web_posterLandscape_50cb392c0d354cba10f6fc920b995f9e.jpg">undefined
+                          <div class="style__PosterTagBottom-jfvctl-38 gqFsbl"></div>undefined</div>undefined</div>
+                      undefined</div>undefined<div class="style__SliderItem-jfvctl-6 hYzxtc">undefined<div
+                        class="style__Card-jfvctl-11 IaIDG card">undefined<img class="img-placeholder"
+                          alt="Sứ Mệnh 36 Giờ II" src="/main/assets/img/thumpgray-16x9.png">undefined<div
+                          class="style__Box-jfvctl-10 ildniP">undefined<img alt="Sứ Mệnh 36 Giờ II" class="hover-img"
+                            src="//assets.glxplay.io/images/w400/title/the-hippocratic-crush-ii_web_posterLandscape_dc6215eacc148b41cf1711899ffd6baa.jpg">undefined
+                          <div class="style__PosterTagBottom-jfvctl-38 gqFsbl"></div>undefined</div>undefined</div>
+                      undefined</div>undefined<div class="style__SliderItem-jfvctl-6 hYzxtc">undefined<div
+                        class="style__Card-jfvctl-11 IaIDG card">undefined<img class="img-placeholder" alt="Sát Thủ"
+                          src="/main/assets/img/thumpgray-16x9.png">undefined<div class="style__Box-jfvctl-10 ildniP">
+                          undefined<img alt="Sát Thủ" class="hover-img"
+                            src="//assets.glxplay.io/images/w400/title/death-by-zero_web_posterLandscape_aa9462fbddee226ccf0f060bb8371c01.jpg">undefined
+                          <div class="style__PosterTagBottom-jfvctl-38 gqFsbl"></div>undefined</div>undefined</div>
+                      undefined</div>undefined<div class="style__SliderItem-jfvctl-6 hYzxtc">undefined<div
+                        class="style__Card-jfvctl-11 IaIDG card">undefined<img class="img-placeholder"
+                          alt="Bằng Chứng Thép" src="/main/assets/img/thumpgray-16x9.png">undefined<div
+                          class="style__Box-jfvctl-10 ildniP">undefined<img alt="Bằng Chứng Thép" class="hover-img"
+                            src="//assets.glxplay.io/images/w400/title/forensic-heroes_web_posterLandscape_8c98acda149b96248fedf3a207acd54d.jpg">undefined
+                          <div class="style__PosterTagBottom-jfvctl-38 gqFsbl"></div>undefined</div>undefined</div>
+                      undefined</div>undefined</div>undefined</div>undefined<div
+                  class="style__Arrow-jfvctl-7 style__ArrowNext-jfvctl-9 eshCae">undefined<svgundefinedxmlns="http:
+                    //www.w3.org/2000/svg" viewBox="0 0 492.004 492.004" width="30px" height="30px" class="arrow-right">
+                    undefined<path
+                      d="M382.678,226.804L163.73,7.86C158.666,2.792,151.906,0,144.698,0s-13.968,2.792-19.032,7.86l-16.124,16.12    c-10.492,10.504-10.492,27.576,0,38.064L293.398,245.9l-184.06,184.06c-5.064,5.068-7.86,11.824-7.86,19.028    c0,7.212,2.796,13.968,7.86,19.04l16.124,16.116c5.068,5.068,11.824,7.86,19.032,7.86s13.968-2.792,19.032-7.86L382.678,265    c5.076-5.084,7.864-11.872,7.848-19.088C390.542,238.668,387.754,231.884,382.678,226.804z"
+                      data-original="#000000" class="active-path" data-old_color="#000000"></path>
+                    undefined</svg>undefined</div>undefined</div>undefined</div>undefined</div>undefined</div>undefined
+      </div>undefined
+    </div>undefined
+  </div>
+
+  {% include "includes/footer.html"%}
+
+</div>
+
+{% endblock content %}
+
+{% block javascripts %}
+<script src="/static/assets/browse/main.js"></script>
+{% endblock javascripts %}

@@ -15,13 +15,8 @@ function getCookie(name) {
 }
 
 $(document).ready(function(){
- 
   $.ajax({
     url: '/api/movies_list',
-    beforeSend: function (xhr) {
-      xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
-      xhr.setRequestHeader('X-CSRFToken', getCookie('csrftoken'));
-    },
     data: 'json',
     success: function (response) {
       if (response.status == 0) {
@@ -30,8 +25,8 @@ $(document).ready(function(){
           HTML += '<div class="ribbon-landscape">' +
             '<h1>' + category.group + '</h1>' +
             '<div class="main-carousel" >';
-          for (let i1 = 0; i1 < category.items.length; i1++) {
-            HTML += category.items[i1];
+          for (let index = 0; index < category.items.length; index++) {
+            HTML += '<a href="/browse/movie-detail.html?id='+ category.items[index].id+'">' + category.items[index].img + '</a>';
           }
           HTML += '</div></div>'
         })
@@ -44,13 +39,4 @@ $(document).ready(function(){
       }
     }
   })
-
-  $("#btnWatch").click(function(){
-    window.location = window.location.protocol + "//" + window.location.host +"/browse/movie-watch.html";
-  })
-
-  $("#btnMylist").click(function(){
-    window.location = window.location.protocol + "//" + window.location.host +"/browse/mylist.html";
-  })
-
 });

@@ -1,32 +1,28 @@
-{% load static %}
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#0077c8">
 <link rel="icon" type="image/png" href="/static/assets/img/logo/Logo.svg">
 
 {% block stylesheets %}
-<link rel="stylesheet" href="/static/assets/detail/main.css">
-<link rel="stylesheet" href="/static/assets/detail/vendor.css">
+<link rel="stylesheet" href="/static/assets/main/main.css">
+<link rel="stylesheet" href="/static/assets/main/vendor.css">
 <link href="https://vjs.zencdn.net/7.17.0/video-js.css" rel="stylesheet" />
 
 {% endblock stylesheets %}
 {% block content %}
-
-<div id="main-app">
-  
+<div id="main-app">  
   {% include "includes/navigation_hide.html" %}
-
   <video id="my-video" class="video-js vjs-default-skin vjs-big-play-centered"
       controls preload="auto"  style="min-width: 100%;" 
       data-setup="{}"> 
-    <source src="{% static 'assets/Avengers_ Age of Ultron.mp4' %}" type="video/mp4"> </source>
+    <source src="{{ video_url }}" type="video/mp4"> </source>
   </video>
 </div>
 
 {% endblock content %}
 
 {% block javascripts %}
-<script src="/static/assets/detail/main.js"></script>
 <script src="/static/assets/plugins/jquery/jquery.min.js"></script>
 <script src="https://vjs.zencdn.net/7.17.0/video.min.js"></script>
 
