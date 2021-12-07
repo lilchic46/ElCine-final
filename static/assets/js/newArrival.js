@@ -16,7 +16,6 @@ function getCookie(name) {
 
 $(document).ready(function(){
  
-
   $.ajax({
     url: '/api/new_arrival',
     data: 'json',

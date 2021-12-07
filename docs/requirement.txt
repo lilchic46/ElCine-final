@@ -1,0 +1,29 @@
+
+- User Đăng ký/ Đăng nhập
+- Sau khi đăng nhập thì mới vào được web để xem danh sách phim
+- User cần phải trả tiền để xem được phim (anh có thể tuỳ ý, trả theo từng film hoặc bỏ sẵn vào ví ròi trả sau ạ)
+- Chức năng search phim theo tên và filter theo loại film
+- Thêm vào wishlist
+- Có thể rating film sau khi mua phim
+- Website tiếng anh ạ
+
+
+
+1. Danh sách ở màn Home, New arrival và Favorite list chưa bấm được qua trang Detail
+2. Em chưa thêm được phim vào danh sách Favourite list ạ.
+-> Bấm nút My list -> Phim được đưa vào danh sách trong Favorite list 
+Còn hiện tại em thấy favourite list đang fix cứng luôn ấy ạ
+
+3. Phần Payment, nhờ anh thêm validate required cho toàn bộ các field của card á anh. Nếu thiếu 1 trường thì hiện thông báo “Please input information” và không cho thanh toán, còn lại k cần check gì đâu ạ
+
+4. Ở phần Profile trên góc phải màn hình, anh bỏ giúp em mục Coin 
+
+4. Trong trang Account, anh thêm giúp em trường Name vào chỗ Account Information với ạ
+
+5. Bỏ giúp em ở trang Account, phần Buy ticket, thông tin bên góc trái (Tên gói và nút Upgrade); còn SĐT chỉnh thành tên hoặc email
+
+6. Cho em hỏi, mình có cách nào để xem lại được lịch sử mua phim k ha anh? Ý là, list ra các phim đã mua và số tiền tương ứng đó ạ
+
+7. Với còn 1 chỗ nữa, nếu em đang coi mà em back ra, thì sau đó em vào lại phim thì sẽ k bị bắt mua lại đó ạ. Em thấy chỗ này chưa có xử lý nè ạ. Mình chỉ bắt mua lại khi nào user đó xem hết phim thôi ạ
+
+8. Phần search vẫn chưa được xử lý nữa nha anh ơi
