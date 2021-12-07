@@ -1,4 +1,4 @@
-# Deploy on mac or Linux
+# Deploy on MAC or Linux
 ## Install virtualenv¶
 https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/
 sudo apt install python3-venv
